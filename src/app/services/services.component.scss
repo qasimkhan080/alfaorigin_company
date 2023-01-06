@@ -1,0 +1,86 @@
+.mmm{
+    // margin-top: 6%;
+}
+.hello{
+    background-image: url("https://10pearls.com/wp-content/uploads/2022/12/bannerWP-2022.png");
+    opacity: 0.5;
+    height: 650px;
+    // background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.top_heading {
+    text-align: center;
+    margin-top: 5%;
+}
+.top_heading h1 ,p{
+    color:black ;
+    // opacity: ;
+}
+.st_text h6{
+    color: #3498db;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 2em;
+    margin-right: 5%;
+    // text-align: justify;
+
+}
+.st_para p{
+    color: #020101;
+    line-height: 2em;
+    font-size: 18px;
+    margin-left: 5%;
+    font-weight: 600;
+}
+.service_btn{
+    color: #3498db;
+    width: 70%;
+    background: transparent;
+    border: 1px solid ;
+    border-radius: 25px;
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 18px;
+    font-weight: 500;
+    max-width: 325px;
+    padding: 0.5rem 0.5rem;
+}
+.service_btn-active{
+    color: white;
+    background-color:#3498db ;
+}
+.card{
+    background-color:#3498db  ;
+    border-radius: 25px;
+    padding: 55px;
+    max-width: 513px;
+    min-height: 456px;
+}
+.card_body h6 {
+    color: white;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 1.55;
+    margin: 20px 0;
+}
+.card_body p{
+    font-size: 18px;
+    font-weight: normal;
+    line-height: 1.71;
+    color: white;
+    text-align: justify;
+
+}
+.main_heading{
+    color: #3498db ;
+    font-size: 36px;
+    font-weight: bold;
+    line-height: 1.15em;
+}
+.card_body img{
+    width: 52px;
+    filter: brightness(0) invert(1);
+    height: auto;
+    max-height: 58px;
+}

@@ -1,0 +1,134 @@
+<p class="mmm">services works!</p>
+
+<section  >
+    <div class="hello">
+        <div class="row" data-aos="fade-up" data-aos-delay="100">
+            <div class="col-md-12 top_heading">
+                <h1 >Software Development</h1>
+                <p>Power your business with our robust, secure and scalable solutions.</p>
+            </div>
+        </div>
+    </div>
+    <section data-aos="fade-up" data-aos-delay="200">
+        <div class="row d-flex">
+            <div class="col-md-4 text-center st_text">
+                <h6>Bespoke and Off-the-shelf  Software Solutions for Your  Unique Business Needs</h6>
+            </div>
+            <div class="col-md-6 st_para">
+                <p>As a leading software development company and digital partner of global enterprises and startups, we provide high-quality software development solutions. Our software services  encompass the full cycle of software development, from ideation to delivery to security and  maintenance. Whether it’s about customizing a running platform, developing prototype  applications, or building and implementing complex technology solutions for enterprises, our  globally distributed team of expert talent is equipped to deliver rapid and fool-proof  solutions.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-light" data-aos="fade-up" data-aos-delay="200">
+        <div class="row d-flex">
+            <div class="col-md-6 text-center">
+                <h6 class="main_heading mb-5 mt-4">Our Services</h6>
+                <div>
+                    <div>
+                        <button class="ms-2 service_btn me-2" [ngClass]="[isclicked==1? 'service_btn-active': '']" (click)="isClicked(1)">Technical Consulting </button>
+                        <button class="ms-2 service_btn" [ngClass]="[isclicked==2?'service_btn-active': '']" (click)="isClicked(2)">Full Stack Development </button>
+                    </div>
+                    <div>
+                        <button class="ms-2 service_btn me-2" [ngClass]="[isclicked==3?'service_btn-active': '']" (click)="isClicked(3)">New Product Development </button>
+                        <button class="ms-2 service_btn" [ngClass]="[isclicked==4?'service_btn-active': '']" (click)="isClicked(4)">Mobile App Development </button>
+                    </div>
+                    <div>
+                        <button class="ms-2 service_btn me-2" [ngClass]="[isclicked==5?'service_btn-active': '']" (click)="isClicked(5)">Legacy and Application </button>
+                        <button class="ms-2 service_btn" [ngClass]="[isclicked==6?'service_btn-active': '']" (click)="isClicked(6)">API Development and Integration </button>
+                    </div>
+                    <div>
+                        <button class="ms-2 service_btn me-2" [ngClass]="[isclicked==7?'service_btn-active': '']" (click)="isClicked(7)">Cloud Development</button>
+                        <button class="ms-2 service_btn" [ngClass]="[isclicked==8?'service_btn-active': '']" (click)="isClicked(8)">UX/UI Design and Ideation </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card">
+                    <div *ngIf="isclicked==1"  class="card_body" data-aos="fade-left" data-aos-delay="30">
+                        <img src="https://10pearls.com/wp-content/uploads/2022/12/consutling-icon-wh.svg" width="48" height="61" alt="logo">
+                        <h6 class="mt-4">Technical Consulting</h6>
+                        <p class="mt-4">Our consultants identify and prioritize business goals, analyze existing investments and systems, and create a roadmap for software delivery and monitoring services. As a trusted digital partner, we work together with our clients to plan and build software optimized for their specific needs that provides true and sustainable value.</p>
+                    </div>
+                    <div *ngIf="isclicked==2" class="card_body" data-aos="fade-left" data-aos-delay="30">
+                        <img src="https://10pearls.com/wp-content/uploads/2022/12/full-stack-wh.svg" width="48" height="61" alt="logo">
+                        <h6 class="mt-4">Full Stack Development</h6>
+                        <p class="mt-4">Our strong technological know-how and extensive experience in full-stack development allow us to deliver optimized, scalable and secure solutions and applications. We are skilled in Front End Development, Middleware Integration, Back End Development, DevOps, and ensure that every build or solution we release is of top-notch quality.</p>
+                    </div>
+                    <div *ngIf="isclicked==3" class="card_body" data-aos="fade-left" data-aos-delay="30">
+                        <img src="https://10pearls.com/wp-content/uploads/2022/09/10pdigIcons-04.svg" width="48" height="61" alt="logo">
+                        <h6 class="mt-4">New Product Development</h6>
+                        <p class="mt-4">Building products is in our DNA. With our global team of consultants, engineers and designers, we develop successful Minimum Viable Products (MVPs) to rapidly launch and validate prototypes, and bring new products to market faster. Our proprietary Lean Product Accelerator™ methodology, rooted in design thinking and agile mindset, is a foolproof approach to ensure intelligent and rapid software product development.</p>
+                    </div>
+                    <div *ngIf="isclicked==4" class="card_body" data-aos="fade-left" data-aos-delay="30">
+                        <img src="https://10pearls.com/wp-content/uploads/2022/11/Vector-1.svg" width="48" height="61" alt="logo">
+                        <h6 class="mt-4">Mobile App Development </h6>
+                        <p class="mt-4">As a leading mobile app development company, we offer a host of services to fulfill all your mobility needs. Whether it’s native app development, hybrid, mobile games, wearables, blockchain or AI-ML based, our powerful and customizable frameworks are robust and accelerate time to market.</p>
+                    </div>
+                    <div *ngIf="isclicked==5" class="card_body"  data-aos="fade-left" data-aos-delay="30">
+                        <img src="https://10pearls.com/wp-content/uploads/2022/12/application-modernization-wh.svg" width="48" height="61" alt="logo">
+                        <h6 class="mt-4">Legacy and Application </h6>
+                        <p class="mt-4">We help businesses modernize by assessing their unique business and technical needs, and provide data-driven, actionable insights and solutions. Whether it’s rehosting, refactoring, rearchitecting, rebuilding or a combination of these, we help businesses rethink their tech ecosystem and get the best return on their investment.</p>
+                    </div>
+                    <div *ngIf="isclicked==6" class="card_body"  data-aos="fade-left" data-aos-delay="30">
+                        <img src="https://10pearls.com/wp-content/uploads/2022/12/api-development-wh.svg" width="48" height="61" alt="logo">
+                        <h6 class="mt-4">API Development and Integration</h6>
+                        <p class="mt-4">We adopt agile, API-driven development to seamlessly integrate custom software with corporate and third-party systems and services. This maximizes flexibility, scalability and uptime. Using this approach, we make sure to extend company-wide automation and enable integration with a variety of software systems and subsystems.</p>
+                    </div>
+                    <div *ngIf="isclicked==7" class="card_body"  data-aos="fade-left" data-aos-delay="30">
+                        <img src="https://10pearls.com/wp-content/uploads/2022/11/cloud-migration-icon-white-2.svg" width="48" height="61" alt="logo">
+                        <h6 class="mt-4">Cloud Development</h6>
+                        <p class="mt-4">Our highly-experienced and skilled cloud professionals provide end-to-end services that cover all aspects of cloud application implementation – ranging from cloud app consulting, cloud app development and testing, to cloud app security services, cloud app integration with other cloud and on-premises apps, and cloud infrastructure management.
+                        </p>
+                    </div>
+                    <div *ngIf="isclicked==8" class="card_body"  data-aos="fade-left" data-aos-delay="30">
+                        <img src="https://10pearls.com/wp-content/uploads/2022/09/10pdigIcons-02.svg" width="48" height="61" alt="logo">
+                        <h6 class="mt-4">UX/UI Design and Ideation</h6>
+                        <p class="mt-4">Our dedicated UX/UI teams are highly proficient in root cause analysis, interface architecture, animation design experience, in-depth post-analysis, and much more. We incorporate a design-thinking approach and ensure that UX and technical requirements go hand in hand, with no trade-off of one at the expense of the other.</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <section >
+        <!-- Carousel wrapper -->
+        <!-- <mdb-carousel [controls]="true" [indicators]="true" [animation]="'fade'">
+            <mdb-carousel-item>
+              <img
+                src="https://mdbootstrap.com/img/Photos/Slides/img%20(15).webp"
+                class="d-block w-100"
+                alt="..."
+              />
+              <div class="carousel-caption d-none d-md-block">
+                <h5>First slide label</h5>
+                <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+              </div>
+            </mdb-carousel-item>
+            <mdb-carousel-item>
+              <img
+                src="https://mdbootstrap.com/img/Photos/Slides/img%20(22).webp"
+                class="d-block w-100"
+                alt="..."
+              />
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Second slide label</h5>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              </div>
+            </mdb-carousel-item>
+            <mdb-carousel-item>
+              <img
+                src="https://mdbootstrap.com/img/Photos/Slides/img%20(23).webp"
+                class="d-block w-100"
+                alt="..."
+              />
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Third slide label</h5>
+                <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+              </div>
+            </mdb-carousel-item>
+          </mdb-carousel> -->
+  <!-- Carousel wrapper -->
+    </section>
+</section>
