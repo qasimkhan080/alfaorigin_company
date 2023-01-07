@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { ApiService } from '../apiServices/api.service';
 
 @Component({
   selector: 'app-quick-inquiry',
@@ -11,7 +12,7 @@ contactForm: FormGroup | any;
 requestQuoteForm: FormGroup | any;
 feedbackForm: FormGroup | any;
 step: number = 1;
-  constructor(private fb: FormBuilder) { }
+  constructor(private apiService: ApiService, private fb: FormBuilder) { }
 
   ngOnInit(): void {
     this.contactForm = this.fb.group({
@@ -43,17 +44,23 @@ step: number = 1;
     this.step = step;
   }
   submitContactForm(){
-    console.log("contactForm are===>",this.contactForm['value'])
-    this.contactForm.reset();
+    this.apiService.postContact(this.contactForm['value']).subscribe((data)=>{
+      alert("Contact data saved successfully");
+      this.contactForm.reset();
+    })
   }
 
   submitRequestQuoteForm(){
-    console.log("requestQuoteForm are===>",this.requestQuoteForm['value'])
-    
+    this.apiService.postRequestQuote(this.requestQuoteForm['value']).subscribe((data)=>{
+      alert("Request Quote data saved successfully");
+      this.requestQuoteForm.reset();
+    })
   }
 
   submitfeedbackForm(){
-    console.log("feedbackForm are===>",this.feedbackForm['value'])
-    
+    this.apiService.postFeedback(this.feedbackForm['value']).subscribe((data)=>{
+      alert("Feedback data saved successfully");
+      this.feedbackForm.reset();
+    }) 
   }
 }
