@@ -10,21 +10,21 @@
             <div class="contact_tab d-flex">
               <ul class="">
                   <li>
-                      <a  (click)="contactUs()">Contact</a>
+                      <a  (click)="changeStep(1)" [ngClass]="[step==1?'activeSubMenu':'']">Contact</a>
                   </li>
                   
                   <li>
-                      <a (click)="request()">Request Quote</a>
+                      <a (click)="changeStep(2)" [ngClass]="[step==2?'activeSubMenu':'']">Request Quote</a>
                   </li>
                   <li>
-                      <a (click)="feedBack()">Feedback</a>
+                      <a (click)="changeStep(3)" [ngClass]="[step==3?'activeSubMenu':'']">Feedback</a>
                   </li>
               </ul>
           </div>
           </div>
 
           <div class="form">
-            <div *ngIf="contact" class="container bg-shadow" data-aos="fade-up">
+            <div *ngIf="step==1" class="container bg-shadow" data-aos="fade-up">
             
               <div class="section-header">
                 <h2 class="">Contact</h2>
@@ -33,20 +33,20 @@
               <div class="row gx-lg-0 gy-4">
       
                 <div class="col-lg-12">
-                  <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+                  <form [formGroup]="contactForm" (ngSubmit)="submitContactForm()">
                     <div class="row">
                       <div class="col-md-6 form-group">
-                        <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                        <input type="text" formControlName="name" class="form-control" placeholder="Your Name" required>
                       </div>
                       <div class="col-md-6 form-group mt-3 mt-md-0">
-                        <input type="number" class="form-control" name="number" id="number" placeholder="Phone" required>
+                        <input type="number" class="form-control" formControlName="phone" placeholder="Phone" required>
                       </div>
                     </div>
                     <div class="form-group mt-3">
-                      <input type="email" class="form-control" name="email" id="email" placeholder="E-mail" required>
+                      <input type="email" class="form-control" formControlName="email" placeholder="E-mail" required>
                     </div>
                     <div class="form-group mt-3">
-                      <textarea class="form-control" name="message" rows="7" placeholder="Message" required></textarea>
+                      <textarea class="form-control" formControlName="message" rows="7" placeholder="Message" required></textarea>
                     </div>
                     <!-- <div class="my-3">
                       <div class="loading">Loading</div>
@@ -62,7 +62,7 @@
       
             </div>
 
-            <div *ngIf="requestquote"  class="container bg-shadow" data-aos="fade-up">
+            <div *ngIf="step==2"  class="container bg-shadow" data-aos="fade-up">
             
               <div class="section-header">
                 <h2>Request A Quote</h2>
@@ -72,25 +72,25 @@
               <div class="row gx-lg-0 gy-4">
       
                 <div class="col-lg-12">
-                  <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+                  <form [formGroup]="requestQuoteForm" (ngSubmit)="submitRequestQuoteForm()">
                     <div class="row">
 
                       <div class="col-md-6 form-group mb-3">
-                        <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                        <input type="text" formControlName="name" class="form-control" placeholder="Your Name" required>
                       </div>
 
                       <div class="col-md-6 form-group mt-3 mt-md-0">
-                       <select name="service" id="" style="    width: 100%;
+                       <select formControlName="service" style="width: 100%;
                        height: 38px;
                        border-radius: 4px;
                        border-color: #d9d9d9;">
-                          <option class="text-muted" value="">Select the service you need </option>
-                          <option value="">Web App Development </option>
-                          <option value="">Mobile App Development </option>
-                          <option value="">Education Technology </option>
-                          <option value="">Web Scraping </option>
-                          <option value="">Data and Artificial Intelligence </option>
-                          <option value="">QA and Software Testing</option>
+                          <option class="text-muted" value="">Select the service you need</option>
+                          <option value="Web App Development">Web App Development</option>
+                          <option value="Mobile App Development">Mobile App Development</option>
+                          <option value="Education Technology">Education Technology</option>
+                          <option value="Web Scraping">Web Scraping </option>
+                          <option value="Data and Artificial Intelligence">Data and Artificial Intelligence</option>
+                          <option value="QA and Software Testing">QA and Software Testing</option>
                        </select>
                       </div>
 
@@ -98,42 +98,34 @@
                     <div class="row">
 
                       <div class="col-md-6 form-group  mb-3">
-                        <input type="text" name="companyname" class="form-control" id="companyname" placeholder="Your organization" required>
+                        <input type="text" formControlName="organization" class="form-control" placeholder="Your organization" required>
                       </div>
 
                       <div class="col-md-6 form-group mt-3 mt-md-0">
-                        <input type="email" class="form-control" name="email" id="email" placeholder="E-mail" required>
+                        <input type="email" class="form-control" formControlName="email" placeholder="E-mail" required>
                       </div>
 
                     </div>
 
                     <div class="form-group  mb-3">
                       <div class="col-md-12 form-group mt-3 mt-md-0">
-                       <select name="service" id="" style="width: 100%;  height: 47px;border-color: #d9d9d9;">
+                       <select formControlName="budget" style="width: 100%;  height: 47px;border-color: #d9d9d9;">
                           <option class="text-muted" value="">What is your budget? *</option>
-                          <option value="">Less than USD 50,000</option>
-                          <option value="">USD 50,000 - USD 100,000</option>
-                          <option value="">USD 100,000 - USD 200,000</option>
-                          <option value="">USD 200,000 - USD 500,000</option>
+                          <option value="Less than USD 50,000">Less than USD 50,000</option>
+                          <option value="USD 50,000 - USD 100,000">USD 50,000 - USD 100,000</option>
+                          <option value="USD 100,000 - USD 200,000">USD 100,000 - USD 200,000</option>
+                          <option value="USD 200,000 - USD 500,000">USD 200,000 - USD 500,000</option>
                           
                        </select>
                       </div>
                     </div>
                       <h6>Technical information</h6>
                     <div class="form-group  mb-3">
-                      <textarea class="form-control" name="message" rows="7" placeholder="How can we help you?" required></textarea>
+                      <textarea class="form-control" formControlName="techInfo" rows="7" placeholder="How can we help you?" required></textarea>
                     </div>
-                    <div class="form-group  mb-3">
+                    <!-- <div class="form-group  mb-3">
                       <label class="text-muted">Upload file [word document, powerpoint presentation or PDF file less than 20mb]</label>
                       <input type="file" class="form-control" name="file" id="file" placeholder="file" required>
-                    </div>
-
-
-
-                    <!-- <div class="my-3">
-                      <div class="loading">Loading</div>
-                      <div class="error-message"></div>
-                      <div class="sent-message">Your message has been sent. Thank you!</div>
                     </div> -->
 
                     <div class="text-center"><button class="btn_send mb-4" type="submit">Send Message</button></div>
@@ -145,7 +137,7 @@
       
             </div>
 
-            <div *ngIf="feedback"  class="container bg-shadow" data-aos="fade-up">
+            <div *ngIf="step==3"  class="container bg-shadow" data-aos="fade-up">
             
               <div class="section-header">
                 <h2>FEEDBACK</h2>
@@ -154,39 +146,39 @@
               <div class="row gx-lg-0 gy-4">
       
                 <div class="col-lg-12">
-                  <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+                  <form [formGroup]="feedbackForm" (ngSubmit)="submitfeedbackForm()">
                     <div class="row">
                       <div class="col-md-6 form-group mb-3">
-                        <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                        <input type="text" formControlName="name" class="form-control" id="name" placeholder="Your Name" required>
                       </div>
                       <div class="col-md-6 form-group mt-3 mt-md-0">
-                        <input type="text" class="form-control" name="address1" id="address1" placeholder="Address 1" required>
+                        <input type="text" class="form-control" formControlName="addressOne" placeholder="Address 1" required>
                       </div>
                     </div>
                     <div class="row">
                       <div class="col-md-6 form-group  mb-3">
-                        <input type="text" name="address2" class="form-control" id="address2" placeholder="Address 2" required>
+                        <input type="text" formControlName="addressTwo" class="form-control" placeholder="Address 2" required>
                       </div>
                       <div class="col-md-6 form-group mt-3 mt-md-0">
-                        <input type="text" class="form-control" name="city" id="city" placeholder="City" required>
+                        <input type="text" class="form-control" formControlName="city" placeholder="City" required>
                       </div>
                     </div>
 
                     <div class="form-group  mb-3">
-                      <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+                      <input type="text" class="form-control" formControlName="subject" placeholder="Subject" required>
                     </div>
 
                     <div class="row">
                       <div class="col-md-6 form-group  mb-3">
-                        <input type="number" name="number" class="form-control" id="number" placeholder="Phone" required>
+                        <input type="number" formControlName="phone" class="form-control" placeholder="Phone" required>
                       </div>
                       <div class="col-md-6 form-group mt-3 mt-md-0">
-                        <input type="email" class="form-control" name="email" id="email" placeholder="E-mail" required>
+                        <input type="email" class="form-control" formControlName="email" placeholder="E-mail" required>
                       </div>
                     </div>
 
                     <div class="form-group  mb-3">
-                      <textarea class="form-control" name="message" rows="7" placeholder="Feedback" required></textarea>
+                      <textarea class="form-control" formControlName="feedback" rows="7" placeholder="Feedback" required></textarea>
                     </div>
                     <!-- <div class="my-3">
                       <div class="loading">Loading</div>
