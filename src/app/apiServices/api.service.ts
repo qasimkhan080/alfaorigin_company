@@ -10,17 +10,17 @@ private baseUrl = 'http://localhost:3000/';
   constructor(private http: HttpClient) { }
 
 public postContact(formData: FormData){
-  const url = `${this.baseUrl}/postContact`;
+  const url = `${this.baseUrl}api/postContact`;
   return this.http.post(url, formData);
 }
 
 public postRequestQuote(formData: FormData){
-  const url = `${this.baseUrl}/postRequestQuote`;
+  const url = `${this.baseUrl}api/postRequestQuote`;
   return this.http.post(url, formData);
 }
 
 public postFeedback(formData: FormData){
-  const url = `${this.baseUrl}/postFeedback`;
+  const url = `${this.baseUrl}api/postFeedback`;
   return this.http.post(url, formData);
 }
 }
