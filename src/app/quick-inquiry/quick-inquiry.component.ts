@@ -16,7 +16,7 @@ step: number = 1;
 
   ngOnInit(): void {
     this.contactForm = this.fb.group({
-      name:[null, [Validators.required]],
+      name:['', Validators.required],
       phone:[null, [Validators.required]],
       email:[null, [Validators.required]],
       message:[null, [Validators.required]]
@@ -44,9 +44,10 @@ step: number = 1;
     this.step = step;
   }
   submitContactForm(){
+    console.log(this.contactForm.value)
     this.apiService.postContact(this.contactForm['value']).subscribe((data)=>{
       alert("Contact data saved successfully");
-      this.contactForm.reset();
+      this.contactForm.value.reset();
     })
   }
 

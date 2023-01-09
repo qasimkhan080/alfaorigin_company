@@ -191,11 +191,11 @@
                 <p class="m-0">We will prepare an execution strategy.</p>
               </div>
               <div class="card-wrap">
-                <i class="fas fa-comments saufik_workicons" aria-hidden="true"></i>
+                <i class="fa fas fa-comments saufik_workicons" aria-hidden="true"></i>
                 <p class="m-0">Implementation using Agile model i.e. active communication.</p>
               </div>
               <div class="card-wrap">
-                <i class="fas fa-poll saufik_workicons" aria-hidden="true"></i>
+                <i class="fa fas fa-poll saufik_workicons" aria-hidden="true"></i>
                 <p class="m-0">You get exactly what you need.</p>
               </div>
             </div>
@@ -308,8 +308,8 @@
             <p>Sit sint consectetur velit nemo qui impedit suscipit alias ea</p>
           </div>
           <div class="row">
-            <div class="col-lg-4 col-md-6">
-              <div class="box" data-aos="zoom-in-right" data-aos-delay="200">
+            <div class="col-lg-4 col-md-6" >
+              <div (click)="priceCard(1)" [ngClass]="[card==1?'recommended':'']" class="box" data-aos="zoom-in-right" data-aos-delay="200">
                 <h3>Free</h3>
                 <h4><sup>$</sup>0<span> / month</span></h4>
                 <ul>
@@ -324,8 +324,9 @@
                 </div>
               </div>
             </div>
+
             <div class="col-lg-4 col-md-6 mt-4 mt-md-0">
-              <div class="box recommended" data-aos="zoom-in" data-aos-delay="100">
+              <div (click)="priceCard(2)" [ngClass]="[card==2?'recommended':'']"  class="box"  data-aos="zoom-in" data-aos-delay="100">
                 <h3>Business</h3>
                 <h4><sup>$</sup>19<span> / month</span></h4>
                 <ul>
@@ -340,8 +341,9 @@
                 </div>
               </div>
             </div>
-            <div class="col-lg-4 col-md-6 mt-4 mt-lg-0">
-              <div class="box" data-aos="zoom-in-left" data-aos-delay="200">
+
+            <div class="col-lg-4 col-md-6 mt-4 mt-lg-0" >
+              <div (click)="priceCard(3)" [ngClass]="[card==3?'recommended':'']" class="box" data-aos="zoom-in-left" data-aos-delay="200">
                 <h3>Developer</h3>
                 <h4><sup>$</sup>29<span> / month</span></h4>
                 <ul>
@@ -356,6 +358,7 @@
                 </div>
               </div>
             </div>
+
           </div>
         </div>
     </section>

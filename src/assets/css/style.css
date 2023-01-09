@@ -1507,13 +1507,13 @@ section {
   transition: 0.3s;
 }
 
-.pricing .box .btn-buy:hover {
+/* .pricing .box .btn-buy:hover {
   background: #3498db;
   color: #fff;
-}
+} */
 
 .pricing .recommended {
-  border-color: #3498db;
+  border-color: #3498db !important;
 }
 
 .pricing .recommended .btn-buy {

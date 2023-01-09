@@ -6,11 +6,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
-
+  card: number = 1;
   constructor() { }
 
   ngOnInit(): void {
     
   }
-
+  priceCard(card:number){
+this.card=card
+  }
 }
