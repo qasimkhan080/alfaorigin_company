@@ -36,17 +36,17 @@
                   <form [formGroup]="contactForm" (ngSubmit)="submitContactForm()">
                     <div class="row">
                       <div class="col-md-6 form-group">
-                        <input type="text" formControlName="name" class="form-control" placeholder="Your Name" required>
+                        <input type="text" formControlName="name" class="form-control" placeholder="Your Name" required="required" >
                       </div>
                       <div class="col-md-6 form-group mt-3 mt-md-0">
-                        <input type="text" class="form-control" formControlName="phone" placeholder="Phone" required>
+                        <input type="text" class="form-control" formControlName="phone" placeholder="Phone" required="required" >
                       </div>
                     </div>
                     <div class="form-group mt-3">
-                      <input type="email" class="form-control" formControlName="email" placeholder="E-mail" required>
+                      <input type="email" class="form-control" formControlName="email" placeholder="E-mail" required="required" >
                     </div>
                     <div class="form-group mt-3">
-                      <textarea class="form-control" formControlName="message" rows="7" placeholder="Message" required></textarea>
+                      <textarea class="form-control" formControlName="message" rows="7" placeholder="Message" required="required" ></textarea>
                     </div>
                     <!-- <div class="my-3">
                       <div class="loading">Loading</div>
