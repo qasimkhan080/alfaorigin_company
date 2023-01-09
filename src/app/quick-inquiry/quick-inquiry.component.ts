@@ -44,24 +44,35 @@ step: number = 1;
     this.step = step;
   }
   submitContactForm(){
-    console.log(this.contactForm.value)
-    this.apiService.postContact(this.contactForm['value']).subscribe((data)=>{
-      alert("Contact data saved successfully");
-      this.contactForm.value.reset();
+    this.apiService.postContact(this.contactForm['value']).subscribe((data:any)=>{
+      if(data['status']==true){
+        alert(data['message']);
+        this.contactForm.reset();
+      }else{
+        alert(data['message']);
+      }
     })
   }
 
   submitRequestQuoteForm(){
-    this.apiService.postRequestQuote(this.requestQuoteForm['value']).subscribe((data)=>{
-      alert("Request Quote data saved successfully");
-      this.requestQuoteForm.reset();
+    this.apiService.postRequestQuote(this.requestQuoteForm['value']).subscribe((data:any)=>{
+      if(data['status']==true){
+        alert("Request Quote data saved successfully");
+        this.requestQuoteForm.reset();
+      }else{
+        alert(data['message']);
+      }
     })
   }
 
   submitfeedbackForm(){
-    this.apiService.postFeedback(this.feedbackForm['value']).subscribe((data)=>{
-      alert("Feedback data saved successfully");
-      this.feedbackForm.reset();
+    this.apiService.postFeedback(this.feedbackForm['value']).subscribe((data:any)=>{
+      if(data['status']==true){
+        alert("Feedback data saved successfully");
+        this.feedbackForm.reset();
+      }else{
+        alert(data['message']);
+      }
     }) 
   }
 }
