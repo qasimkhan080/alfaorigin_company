@@ -17,4 +17,5 @@ export class HomeComponent implements OnInit {
   priceCard(card:number){
 this.card=card
   }
+
 }

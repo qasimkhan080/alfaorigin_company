@@ -11,7 +11,7 @@ export class QuickInquiryComponent implements OnInit {
 contactForm: FormGroup | any;
 requestQuoteForm: FormGroup | any;
 feedbackForm: FormGroup | any;
-step: number = 1;
+step: number = 2;
   constructor(private apiService: ApiService, private fb: FormBuilder) { }
 
   ngOnInit(): void {
