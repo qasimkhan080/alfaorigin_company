@@ -1,9 +1,4 @@
-/**
-* Template Name: Vesperr - v4.3.0
-* Template URL: https://bootstrapmade.com/vesperr-free-bootstrap-template/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
+
 
 /*--------------------------------------------------------------
 # General
@@ -132,7 +127,7 @@ h1, h2, h3, h4, h5, h6 {
   justify-content: space-between;
   /* padding: 10px 0 10px 30px; */
   font-size: 15px;
-  font-weight: 400;
+  font-weight: 600;
   color: #555555;
   white-space: nowrap;
   transition: 0.3s;
@@ -385,10 +380,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 .para{
   font-size: 20px;
-  font-weight: lighter;
-  /* text-transform: uppercase; */
-  /* position: relative; */
-  color: #8b8989;
+    font-weight: 400;
+    color: #646363;
+    line-height: 1.8rem;
+    letter-spacing: 0.1rem;
 }
 
 #hero .btn-get-started {
@@ -866,7 +861,7 @@ section {
 }
 
 .flip-card-front {
-  color: #3498db;
+  color: #5c5d5e;
   border-radius: 15px;
 }
 
@@ -1101,7 +1096,7 @@ section {
 }
 
 .testimonials .testimonial-item .quote-icon-left, .testimonials .testimonial-item .quote-icon-right {
-  color: #e1f0fa;
+  color: #3498db;
   font-size: 26px;
 }
 

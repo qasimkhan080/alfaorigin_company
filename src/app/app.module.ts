@@ -8,6 +8,8 @@ import { HomeComponent } from './home/home.component';
 import { QuickInquiryComponent } from './quick-inquiry/quick-inquiry.component';
 import { ServicesComponent } from './services/services.component';
 import { HttpClientModule } from '@angular/common/http';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { NgbCarouselModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -21,7 +23,7 @@ import { HttpClientModule } from '@angular/common/http';
     FormsModule,
     ReactiveFormsModule,
     HttpClientModule,
-    AppRoutingModule,RouterModule,
+    AppRoutingModule,RouterModule, NgbModule,NgbCarouselModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,71 +1,72 @@
-<section id="hero">
-    <div id="heroCarousel" data-bs-interval="5000" class="carousel slide carousel-fade" data-bs-ride="carousel">
-  
-      <div class="carousel-inner" role="listbox">
-  
-      
-        <div class="carousel-item active">
-          <div class="carousel-container">
-            <div class="row d-flex ms-4">
-              <div class="col-lg-6 pt-5 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center">
-                <h1 class="heading" data-aos="fade-up">Alfa Origin</h1>
-                <h2 class="para" data-aos="fade-up" data-aos-delay="400">Leading customized solutions provider! 
-                We offer our services in
-                  Web designing, Web development, Mobile application development, Desktop application development, Quality assurance, Data engineering &
-                  carrying out Electronic audits. We offer workforce, Tech Leads and CTOs (Chief Technical Officers) to our clients to cater their requirements in personalized fashion. </h2>
-                <div data-aos="fade-up" data-aos-delay="800">
-                  <a class="btn-get-started scrollto">Get Started</a>
-                </div>
-              </div>
-              <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="fade-left" data-aos-delay="200">
-                <img src="assets/img/hero-img.png" class="img-fluid animated" alt="">
-              </div>
-            </div>
+<section >
+  <ngb-carousel >
+    <ng-template ngbSlide>
+      <div class="row d-flex ms-4 mt-5 text-center">
+        <div class="col-lg-6 pt-5 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center">
+          <h1 class="heading" data-aos="fade-up">Software Development</h1>
+          <h2 class="para mt-3" data-aos="fade-up" data-aos-delay="400">Leading customized solutions provider! 
+            Our highly experienced experts use state-of-the-art technology to deliver solutions that cater for your business needs. We offer services in Web Development, Mobile Application Development & Desktop Application Development,</h2>
+          <div data-aos="fade-up" data-aos-delay="800">
+            <a class="btn-get-started scrollto mt-3" routerLink="/quickinquiry">Get Started</a>
           </div>
         </div>
-  
-      
-        <div class="carousel-item" style="background-image: url(assets/img/slide/slide-2.jpg);">
-          <div class="carousel-container">
-            <div class="carousel-content animate__animated animate__fadeInUp">
-              <h2>Lorem Ipsum Dolor</h2>
-              <p>Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.</p>
-              <div class="text-center"><a href="" class="btn-get-started">Read More</a></div>
-            </div>
-          </div>
+        <div class="text-center col-lg-6 order-1 order-lg-2" data-aos="fade-left" data-aos-delay="200">
+          <img src="../../assets/img/animation_500_lcqmwr3p.gif" class="img-fluid animated" style="height: 90%;" alt="">
         </div>
-        
       </div>
-      <a class="carousel-control-prev " href="#heroCarousel" role="button" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon bx bx-left-arrow" aria-hidden="true"></span>
-      </a>
-  
-      <a class="carousel-control-next" href="#heroCarousel" role="button" data-bs-slide="next">
-        <span class="carousel-control-next-icon bx bx-right-arrow" aria-hidden="true"></span>
-      </a>
-  
-      <ol class="carousel-indicators back" id="hero-carousel-indicators"></ol>
-  
-    </div>
-  </section>
+      
+    </ng-template>
+    <ng-template ngbSlide>
+      <div class="row d-flex ms-4 mt-5 text-center">
+        <div class="col-lg-6 pt-5 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center">
+          <h1 class="heading" data-aos="fade-up">Branding</h1>
+          <h2 class="para mt-3" data-aos="fade-up" data-aos-delay="400">Our team of branding specialists will create a branding strategy that incorporates everything ranging from logo design, packaging, strong visual identity to product taglines. We provide extensive market analysis to guide your business decisions.</h2>
+          <div data-aos="fade-up" data-aos-delay="800">
+            <a class="btn-get-started scrollto mt-3" routerLink="/quickinquiry">Get Started</a>
+          </div>
+        </div>
+        <div class="text-center col-lg-6 order-1 order-lg-2" data-aos="fade-left" data-aos-delay="200" style="height:500px; width: 500px;" >
+          <img src="../../assets/img/slider/branding.gif" class="img-fluid animated" style="height: 90%;" alt="">
+        </div>
+      </div>
+     
+    </ng-template>
+    <ng-template ngbSlide>
+      <div class="row d-flex ms-4 mt-5 text-center">
+        <div class="col-lg-6 pt-5 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center">
+          <h1 class="heading" data-aos="fade-up">Consultancy</h1>
+          <h2 class="para mt-3" data-aos="fade-up" data-aos-delay="400">We provide tehnical workforce for our clients to turn their dreams into reality. We are revolutionizing product devlopment, our clients can direct the development by monitoring, providing feedback and suggesting changes at development stage.</h2>
+          <div data-aos="fade-up" data-aos-delay="800">
+            <a class="btn-get-started scrollto mt-3" routerLink="/quickinquiry">Get Started</a>
+          </div>
+        </div>
+        <div class="text-center col-lg-6 order-1 order-lg-2" data-aos="fade-left" data-aos-delay="200">
+          <img src="../../assets/img/slider/consultancey.gif" class="img-fluid animated" style="height: 90%;" alt="">
+        </div>
+      </div>
+     
+    </ng-template>
+   
+  </ngb-carousel>
+</section>
+ 
+
   <main id="main">
-    <!-- WHAT WE ARE GOOD AT -->
     <section id="services" class="services">
         <div class="container">
-  
           <div class="section-title" data-aos="fade-up">
             <p>From cloud to code</p>
             <h2>What we are Good At!</h2>
             <p>Providing the Best solutions For our Clients</p>
           </div>
-  
-          <div class="row" style="width: 95%;  margin-left: 13%;">
-  
-            <div class="flip-card col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-xl-0 mb-4" data-aos="zoom-in" data-aos-delay="400">
+          <div class="row">
+            <div class="flip-card col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-xl-0 mb-5" data-aos="zoom-in" data-aos-delay="400">
               <div class="flip-card-inner">
                 <div class="flip-card-front icon_good">
-                    <i class="icons fas fa-globe"></i>
-                  <h1 class="flip-heading">Web Development</h1> 
+                    <div>
+                      <img src="../../assets/img/loti/web-development.svg" width="120" height="120" alt="">
+                    </div>
+                  <h1 class="flip-heading mt-3">Web Development</h1> 
                 </div>
                 <div class="flip-card-back">
                   <p class="p-2">Your website will be aesthetically appealing and perform optimally to attract users and make them your customers</p> 
@@ -74,11 +75,13 @@
               </div>
             </div>
             
-            <div class="flip-card col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-xl-0 mb-4"data-aos="zoom-in" data-aos-delay="400">
+            <div class="flip-card col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-xl-0 mb-5"data-aos="zoom-in" data-aos-delay="400">
               <div class="flip-card-inner">
                 <div class="flip-card-front icon_good">
-                    <i class="fas fa-mobile"></i>
-                  <h1  class="flip-heading">Mobile App Development</h1> 
+                  <div>
+                    <img src="../../assets/img/loti/Mobile Development.svg" width="120" height="120" alt="">
+                  </div>
+                  <h1  class="flip-heading mt-3">Mobile App Development</h1> 
                 </div>
                 <div class="flip-card-back">
                   <p class="p-2">We provide your applications with responsive, interactive design to engage your customers</p> 
@@ -87,11 +90,13 @@
               </div>
             </div>
   
-            <div class="flip-card col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-xl-0 mb-4"data-aos="zoom-in" data-aos-delay="400">
+            <div class="flip-card col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-xl-0 mb-5"data-aos="zoom-in" data-aos-delay="400">
               <div class="flip-card-inner">
                 <div class="flip-card-front icon_good">
-                    <i class="fas fa-search"></i>
-                  <h1  class="flip-heading">Search Engine Optimization</h1> 
+                  <div>
+                    <img src="../../assets/img/SEo.svg" width="120" height="120" alt="">
+                  </div>
+                  <h1  class="flip-heading mt-3">Search Engine Optimization</h1> 
                 </div>
                 <div class="flip-card-back">
                   <p class="p-2"> Our services include keyword research, on-page optimization, technical SEO , content creation, marketing, and link building </p> 
@@ -100,11 +105,13 @@
               </div>
             </div>
   
-            <div class="flip-card col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-xl-0 mb-4"data-aos="zoom-in" data-aos-delay="400">
+            <div class="flip-card col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-xl-0 mb-5"data-aos="zoom-in" data-aos-delay="400">
               <div class="flip-card-inner">
                 <div class="flip-card-front icon_good">
-                    <i class="fas fa-laptop"></i>
-                  <h1  class="flip-heading">Digital Marketing</h1> 
+                  <div>
+                    <img src="../../assets/img/loti/Digital Marketig.svg" width="120" height="120" alt="">
+                  </div>
+                  <h1  class="flip-heading mt-3">Digital Marketing</h1> 
                 </div>
                 <div class="flip-card-back">
                   <p class="p-2">Our services to digital marketing include, SEO optimization, PPC advertising, social media marketing, Email marketing and more</p> 
@@ -112,13 +119,14 @@
                 </div>
               </div>
             </div>
-  
            
-            <div class="flip-card col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-xl-0 mb-4" data-aos="zoom-in" data-aos-delay="400">
+            <div class="flip-card col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-xl-0 mb-5" data-aos="zoom-in" data-aos-delay="400">
               <div class="flip-card-inner">
                 <div class="flip-card-front icon_good">
-                    <i class="fas fa-brush"></i>
-                  <h1  class="flip-heading">UI/UX Designing</h1> 
+                  <div>
+                    <img src="../../assets/img/UI UX.svg" width="120" height="120" alt="">
+                  </div>
+                  <h1  class="flip-heading mt-3">UI/UX Designing</h1> 
                 </div>
                 <div class="flip-card-back">
                   <p class="p-2">We seek to provide our clients best UI/UX experience by providing aesthetically pleasing design with cross-browser support</p> 
@@ -127,11 +135,13 @@
               </div>
             </div>
             
-            <div class="flip-card col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-xl-0 mb-4"data-aos="zoom-in" data-aos-delay="400">
+            <div class="flip-card col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-xl-0 mb-5"data-aos="zoom-in" data-aos-delay="400">
               <div class="flip-card-inner">
                 <div class="flip-card-front icon_good">
-                    <i class="fas fa-clock"></i>
-                  <h1  class="flip-heading">24/7 Support</h1> 
+                  <div>
+                    <img src="../../assets/img/loti/technical-support-customer-svgrepo-com 1.svg" width="120" height="120" alt="">
+                  </div>
+                  <h1  class="flip-heading mt-3">24/7 Support</h1> 
                 </div>
                 <div class="flip-card-back">
                   <p class="p-2">We provide relentless suport, and our teams are available to you at your convinience 24/7</p> 
@@ -140,11 +150,13 @@
               </div>
             </div>
   
-            <div class="flip-card col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-xl-0 mb-4"data-aos="zoom-in" data-aos-delay="400">
+            <div class="flip-card col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-xl-0 mb-5"data-aos="zoom-in" data-aos-delay="400">
               <div class="flip-card-inner">
                 <div class="flip-card-front icon_good">
-                    <i class="	fas fa-seedling"></i>
-                  <h1  class="flip-heading">Branding</h1> 
+                  <div>
+                    <img src="../../assets/img/loti/Branding.svg" width="120" height="120" alt="">
+                  </div>
+                  <h1  class="flip-heading mt-3">Branding</h1> 
                 </div>
                 <div class="flip-card-back">
                   <p class="p-2">Our team of branding specialists will develop a branding strategy that includes everything from logo design, packaging, and strong visual identity</p> 
@@ -153,11 +165,13 @@
               </div>
             </div>
   
-            <div class="flip-card col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-xl-0 mb-4"data-aos="zoom-in" data-aos-delay="400">
+            <div class="flip-card col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-xl-0 mb-5"data-aos="zoom-in" data-aos-delay="400">
               <div class="flip-card-inner">
                 <div class="flip-card-front icon_good">
-                    <i class="fas fa-handshake"></i>
-                  <h1  class="flip-heading">Consultancy</h1> 
+                  <div>
+                    <img src="../../assets/img/loti/Consulting.svg" width="120" height="120" alt="">
+                  </div>
+                  <h1  class="flip-heading mt-3">Consultancy</h1> 
                 </div>
                 <div class="flip-card-back">
                   <p class="p-2">We cover wide range of area from strategy, planning, implementation and optimization</p> 
@@ -172,31 +186,38 @@
     <section id="works" class="works section-bg">
         <div class="container mx-auto d-flex align-items-center flex-wrap" data-aos = "fade-up" data-aos-delay="200" >
           <!-- text -->
-            <div class="text col-md-12 col-lg-6 text-center text-lg-left">
-              <div>
-                <h1 class="bg-text">How it Works</h1>
+            <div class="text col-md-12 col-lg-6  text-lg-left">
+              <div class="section-title">
+                <h2>How it Works</h2>
               </div>
-              <h4 class="mt-4 position-relative">Tell us your needs/idea</h4>
-              <p class="mt-lg-5 mt-0 pt-3 mr-lg-5 mr-0">We have helped individuals, startups and
+              <p class=" mt-4 mr-lg-5 mr-0">We have helped individuals, startups and
                 companies in deftly implementing their business ideas/requirements. Our extensive experience has helped
                them to grow their businesses</p>
             </div>
             <div class="col-md-12 col-lg-6 cards_header">
               <div class="card-wrap">
-                <i class="fas fa-lightbulb-o saufik_workicons" aria-hidden="true"></i>
-                <p class="m-0">Tell us your needs/idea.</p>
+                <div class="text-center">
+                  <img src="../../assets/img/bulb-svgrepo-com.svg" width="30" height="30" alt="">
+                </div>
+                <p class="m-0 mt-2">Tell us your needs/idea.</p>
               </div>
               <div class="card-wrap">
-                <i class="fas fa-chess-pawn saufik_workicons" aria-hidden="true"></i>
-                <p class="m-0">We will prepare an execution strategy.</p>
+                <div class="text-center">
+                  <img src="../../assets/img/process-gear-business-svgrepo-com.svg" width="40" height="40" alt="">
+                </div>
+                <p class="m-0 mt-2">We will prepare an execution strategy.</p>
               </div>
               <div class="card-wrap">
-                <i class="fas fa-comments saufik_workicons" aria-hidden="true"></i>
-                <p class="m-0">Implementation using Agile model i.e. active communication.</p>
+                <div class="text-center">
+                  <img src="../../assets/img//chat-svgrepo-com.svg"  width="45" height="45" alt="">
+                </div>
+                <p class="m-0 mt-2">Implementation using Agile model.</p>
               </div>
               <div class="card-wrap">
-                <i class="fas fa-poll saufik_workicons" aria-hidden="true"></i>
-                <p class="m-0">You get exactly what you need.</p>
+                <div class="text-center">
+                  <img src="../../assets/img/graph-svgrepo-com.svg"  width="30" height="30" alt="">
+                </div>
+                <p class="m-0 mt-2">You get exactly what you need.</p>
               </div>
             </div>
           
@@ -216,8 +237,10 @@
                       <div class="pic"><img src="" class="img-fluid" alt=""></div>
                       <div class="member-info">
                           
-                          <i class="icons fas fa-user-tie" ></i>
-                  <h4>Have Your first investor even before you start</h4>
+                          <div>
+                            <img src="../../assets/img/Investor.svg" width="60" height="60" alt="">
+                          </div>
+                  <h4 class="mt-2">Have Your first investor even before you start</h4>
                   <p>Alfa Origin will begin investing in your start-up even before you do, joining you on your entrepreneurial path.</p>
                 </div>
               </div>
@@ -227,8 +250,10 @@
               <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="200">
                 <div class="pic"><img src="" class="img-fluid" alt=""></div>
                 <div class="member-info">
-                    <i class="icons fas fa-microchip"></i>
-                  <h4>Save all your hardware and software costs</h4>
+                  <div>
+                    <img src="../../assets/img/Hardware.svg" width="60" height="60" alt="">
+                  </div>
+                  <h4 class="mt-2">Save all your hardware and software costs</h4>
                   <p>Working with Alfa Origin allows you to avoid paying for necessary technical equipment and tools. We give you a product that is all set to use.</p>
                 </div>
               </div>
@@ -238,8 +263,10 @@
               <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="300">
                 <div class="pic"><img src="" class="img-fluid" alt=""></div>
                 <div class="member-info">
-                    <i class="icons fas fa-group"></i>
-                  <h4>Have your own fully fledged technical team</h4>
+                  <div>
+                    <img src="../../assets/img/Team.svg" width="60" height="60" alt="">
+                  </div>
+                  <h4 class="mt-2">Have your own fully fledged technical team</h4>
                   <p>Have a staff of your own to assist your expanding startup in all technical areas, such as development, infrastructure, digital marketing, etc.</p>
                 </div>
               </div>
@@ -249,8 +276,10 @@
               <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="400">
                 <div class="pic"><img src="" class="img-fluid" alt=""></div>
                 <div class="member-info">
-                    <i class="icons fas fa-graduation-cap"></i>
-                  <h4>Mentorship from experienced and successful leaders</h4>
+                  <div>
+                    <img src="../../assets/img/Mentorship.svg" width="60" height="60" alt="">
+                  </div>
+                  <h4 class="mt-2">Mentorship from experienced and successful leaders</h4>
                   <p>A successful business will be ensured by experienced leaders who will serve as your mentors in all facets of the start-up industry.</p>
                 </div>
               </div>
@@ -262,46 +291,115 @@
     </section>
     <!-- Our Team -->
     <section id="testimonials" class="testimonials section-bg">
+
+      
+
+
         <div class="container">
           <div class="section-title" data-aos="fade-up">
             <h2>Testimonial</h2>
           </div>
-          <div class="testimonials-slider swiper-container" data-aos="fade-up" data-aos-delay="100">
-            <div class="swiper-wrapper">
-              
-              <div class="swiper-slide">
-                <div class="testimonial-wrap">
-                  <div class="testimonial-item">
-                    <img src="assets/img/Ashir.jpg" class="testimonial-img" alt="">
-                    <h3>ZAQ</h3>
-                    <h4>CEO</h4>
-                    <p>
-                      <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                      ZAQ is the CEO at Alfa Origin. Mr Zaq has vast experience in Business Development and Manging the operations in the organization.
-                      <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                    </p>
+          <ngb-carousel>
+            <ng-template ngbSlide>
+              <div class="testimonials-slider swiper-container" data-aos="fade-up" data-aos-delay="100">
+                <div class="swiper-wrapper">
+                  
+                  <div class="swiper-slide">
+                    <div class="testimonial-wrap">
+                      <div class="testimonial-item">
+                        <h3>ZAQ</h3>
+                        <h4>CEO & Founder</h4>
+                        <p>
+                          <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                          ZAQ is the CEO at Alfa Origin. Mr Zaq has vast experience in Business Development and Manging the operations in the organization.
+                          <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                 
+                  <div class="swiper-slide">
+                    <div class="testimonial-wrap">
+                      <div class="testimonial-item">
+                        <img src="assets/img/qasim.jpg" class="testimonial-img" alt="">
+                        <h3>Qasim Khan Niazi</h3>
+                        <h4>CEO Alpha Origin </h4>
+                        <p>
+                          <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                          As a Enterpenure and It Expert. Qasim Niazi is the CEO of AlfaOrigin.Mr Qasim have vast experience in 
+                          IT industryand and as well as in the Digital marketing industry with ambitious goal of problem solving and job creation for people.
+                          <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                        </p>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
-             
-              <div class="swiper-slide">
-                <div class="testimonial-wrap">
-                  <div class="testimonial-item">
-                    <img src="assets/img/qasim.jpg" class="testimonial-img" alt="">
-                    <h3>Qasim Khan Niazi</h3>
-                    <h4>CEO Alpha Origin </h4>
-                    <p>
-                      <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                      As a Enterpenure and It Expert. Qasim Niazi is the CEO of AlfaOrigin.Mr Qasim have vast experience in 
-                      IT industryand and as well as in the Digital marketing industry with ambitious goal of problem solving and job creation for people.
-                      <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                    </p>
+          
+            </ng-template>
+
+            <ng-template ngbSlide>
+              <div class="testimonials-slider swiper-container" data-aos="fade-up" data-aos-delay="100">
+                <div class="swiper-wrapper">
+                  
+                  <div class="swiper-slide">
+                    <div class="testimonial-wrap">
+                      <div class="testimonial-item">
+                        <h3>John Larson</h3>
+                        <h4>Director</h4>
+                        <p>
+                          <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                          John is technical director at AlfaOrigin, vastly experienced in product development and is leading multiple products very efficiently.
+                          <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                        </p>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-            <div class="swiper-pagination"></div>
-          </div>
+          
+            </ng-template>
+            <ng-template ngbSlide>
+              <div class="testimonials-slider swiper-container" data-aos="fade-up" data-aos-delay="100">
+                <div class="swiper-wrapper">
+                  
+                  <div class="swiper-slide">
+                    <div class="testimonial-wrap">
+                      <div class="testimonial-item">
+                        <h3>Sara Wilsson</h3>
+                        <h4>Designer</h4>
+                        <p>
+                          <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                          Sara is UI/UX designer at AlfaOrigin, she has is quite adept at creating interactive design that provide great user exprerience.
+                          <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                 
+                  <div class="swiper-slide">
+                    <div class="testimonial-wrap">
+                      <div class="testimonial-item">
+                        <img src="assets/img/qasim.jpg" class="testimonial-img" alt="">
+                        <h3>Qasim Khan Niazi</h3>
+                        <h4>CEO Alpha Origin </h4>
+                        <p>
+                          <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                          As a Enterpenure and It Expert. Qasim Niazi is the CEO of AlfaOrigin.Mr Qasim have vast experience in 
+                          IT industryand and as well as in the Digital marketing industry with ambitious goal of problem solving and job creation for people.
+                          <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          
+            </ng-template>
+          </ngb-carousel>
+
+
+          
         </div>
     </section>
     <!-- Pricing -->
@@ -309,19 +407,20 @@
         <div class="container">
           <div class="section-title">
             <h2>Pricing</h2>
-            <p>Sit sint consectetur velit nemo qui impedit suscipit alias ea</p>
+            <p>Choose your perfect plans</p>
           </div>
           <div class="row">
             <div class="col-lg-4 col-md-6" >
               <div (click)="priceCard(1)" [ngClass]="[card==1?'recommended':'']" class="box" data-aos="zoom-in-right" data-aos-delay="200">
-                <h3>Free</h3>
+                <h3>Primary Website Package</h3>
                 <h4><sup>$</sup>0<span> / month</span></h4>
                 <ul>
-                  <li>Aida dere</li>
-                  <li>Nec feugiat nisl</li>
-                  <li>Nulla at volutpat dola</li>
-                  <li class="na">Pharetra massa</li>
-                  <li class="na">Massa ultricies mi</li>
+                  <li>Design</li>
+                  <li>Mocks</li>
+                  <li>Free google friendly sitemap</li>
+                  <li>One Page Website</li>
+                  <li >Demo</li>
+                  <li >DFD Demo</li>
                 </ul>
                 <div class="btn-wrap">
                   <a href="#" class="btn-buy" routerLink="/quickinquiry">Buy Now</a>
@@ -331,14 +430,15 @@
 
             <div class="col-lg-4 col-md-6 mt-4 mt-md-0">
               <div (click)="priceCard(2)" [ngClass]="[card==2?'recommended':'']"  class="box"  data-aos="zoom-in" data-aos-delay="100">
-                <h3>Business</h3>
-                <h4><sup>$</sup>19<span> / month</span></h4>
+                <h3>Startup Website Package</h3>
+                <h4><sup>$</sup>400<span> / month</span></h4>
                 <ul>
-                  <li>Aida dere</li>
-                  <li>Nec feugiat nisl</li>
-                  <li>Nulla at volutpat dola</li>
-                  <li>Pharetra massa</li>
-                  <li class="na">Massa ultricies mi</li>
+                  <li>5 page website</li>
+                  <li>3 Banner design</li>
+                  <li>Free google friendly sitemap</li>
+                  <li>100% unique design gaurantee</li>
+                  <li>Mobile responsive will be additional $200*</li>
+                  <li>CMS will be additional $300*</li>
                 </ul>
                 <div class="btn-wrap">
                   <a href="#" class="btn-buy" routerLink="/quickinquiry">Buy Now</a>
@@ -348,14 +448,15 @@
 
             <div class="col-lg-4 col-md-6 mt-4 mt-lg-0" >
               <div (click)="priceCard(3)" [ngClass]="[card==3?'recommended':'']" class="box" data-aos="zoom-in-left" data-aos-delay="200">
-                <h3>Developer</h3>
-                <h4><sup>$</sup>29<span> / month</span></h4>
+                <h3>Executive Website Package</h3>
+                <h4><sup>$</sup>800<span> / month</span></h4>
                 <ul>
-                  <li>Aida dere</li>
-                  <li>Nec feugiat nisl</li>
-                  <li>Nulla at volutpat dola</li>
-                  <li>Pharetra massa</li>
-                  <li>Massa ultricies mi</li>
+                  <li>10 unique pages website</li>
+                  <li>CMS / Admin Panel Support</li>
+                  <li>Mobile Responsive</li>
+                  <li>Complete Deployment</li>
+                  <li>100% unique design gaurantee</li>
+                  <li>100% Satisfaction gaurantee*</li>
                 </ul>
                 <div class="btn-wrap">
                   <a href="#" class="btn-buy" routerLink="/quickinquiry">Buy Now</a>
@@ -424,57 +525,12 @@
                 <a href="https://pk.linkedin.com/company/zeetech072?trk=public_profile_topcard-current-company" target="_blank" class="linkedin"><i class="bi bi-linkedin"></i></a>
               </div>
   
-              <!-- <form action="forms/contact.php" method="post" role="form" class="php-email-form">
-                <div class="form-group">
-                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
-                </div>
-                <div class="form-group">
-                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
-                </div>
-                <div class="form-group">
-                  <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
-                </div>
-                <div class="form-group">
-                  <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
-                </div>
-                <div class="my-3">
-                  <div class="loading">Loading</div>
-                  <div class="error-message"></div>
-                  <div class="sent-message">Your message has been sent. Thank you!</div>
-                </div>
-                <div class="text-center"><button type="submit">Send Message</button></div>
-              </form> -->
             </div>
   
           </div>
-  <!-- <div class="col-lg-10 col-md-10 mt-5 d-flex justify-content-between">
-    <div class="social-links">
-      <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
-      <a href="https://m.facebook.com/AlfaOrigin/?ref=py_c" class="facebook" target="_blank"><i class="bi bi-facebook"></i></a>
-      <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
-      <a href="https://pk.linkedin.com/company/zeetech072?trk=public_profile_topcard-current-company" target="_blank" class="linkedin"><i class="bi bi-linkedin"></i></a>
-    </div>
-    <div class="info">
-              
-      <div>
-        <i class="ri-map-pin-line"></i>
-        <p>Office number 1 2nd floor D-739 Satellite Town Rawalpindi</p>
-      </div>
   
-      <div>
-        <i class="ri-mail-send-line"></i>
-        <p>hr@alfaorigin.com</p>
-      </div>
-  
-      <div>
-        <i class="ri-phone-line"></i>
-        <p>(051) 8443375</p>
-      </div>
-  
-    </div>
-  </div> -->
         </div>
     </section>
-    >
+
 
   </main>
