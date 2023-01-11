@@ -1423,7 +1423,8 @@ section {
 --------------------------------------------------------------*/
 .pricing .box {
   padding: 20px;
-  background: #f9f9f9;
+  /* background: #f9f9f9; */
+  box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
   text-align: center;
   border-radius: 8px;
   position: relative;
@@ -1797,7 +1798,7 @@ section {
   justify-content: center;
 }
 .card-wrap {
-  background: #F0F0F0;
+  background: white;
   height: 9rem;
   width: 9rem;
   margin: 1.2rem 1.4rem;

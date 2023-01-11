@@ -36,17 +36,33 @@
                   <form [formGroup]="contactForm" (ngSubmit)="submitContactForm()">
                     <div class="row">
                       <div class="col-md-6 form-group">
-                        <input type="text" formControlName="name" class="form-control" placeholder="Your Name" required="required" >
+                        <input type="text" formControlName="name" class="form-control" placeholder="Your Name"  [ngClass]="{'is-invalid': submitted && g.name.errors}" >
+                        <div *ngIf="submitted && g.name.errors" class="invalid-feedback">
+                          <div *ngIf="g.name.errors.required"> Name is required</div>
                       </div>
+                      </div>
+
+
                       <div class="col-md-6 form-group mt-3 mt-md-0">
-                        <input type="text" class="form-control" formControlName="phone" placeholder="Phone" required="required" >
+                        <input type="number" class="form-control" formControlName="phone" placeholder="Phone" [ngClass]="{'is-invalid': submitted && g.phone.errors}"  >
+                        <div *ngIf="submitted && g.phone.errors" class="invalid-feedback">
+                          <div *ngIf="g.phone.errors.required"> Phone is required</div>
                       </div>
+                      </div>
+
+                    </div>
+
+                    <div class="form-group mt-3">
+                      <input type="email" class="form-control" formControlName="email" placeholder="E-mail" [ngClass]="{'is-invalid': submitted && g.email.errors}"  >
+                      <div *ngIf="submitted && g.email.errors" class="invalid-feedback">
+                        <div *ngIf="g.email.errors.required"> E-mail is required</div>
+                    </div>
                     </div>
                     <div class="form-group mt-3">
-                      <input type="email" class="form-control" formControlName="email" placeholder="E-mail" required="required" >
+                      <textarea class="form-control" formControlName="message" rows="7" placeholder="Message" [ngClass]="{'is-invalid': submitted && g.message.errors}"  ></textarea>
+                      <div *ngIf="submitted && g.message.errors" class="invalid-feedback">
+                        <div *ngIf="g.message.errors.required"> Message is required</div>
                     </div>
-                    <div class="form-group mt-3">
-                      <textarea class="form-control" formControlName="message" rows="7" placeholder="Message" required="required" ></textarea>
                     </div>
                     <!-- <div class="my-3">
                       <div class="loading">Loading</div>
@@ -76,14 +92,17 @@
                     <div class="row">
 
                       <div class="col-md-6 form-group mb-3">
-                        <input type="text" formControlName="name" class="form-control" placeholder="Your Name" required>
+                        <input type="text" formControlName="name" class="form-control" placeholder="Your Name" [ngClass]="{ 'is-invalid': submitted && f.name.errors }">
+                        <div *ngIf="submitted && f.name.errors" class="invalid-feedback">
+                          <div *ngIf="f.name.errors.required">Name is required</div>
+                      </div>
                       </div>
 
                       <div class="col-md-6 form-group mt-3 mt-md-0">
                        <select formControlName="service" style="width: 100%;
                        height: 38px;
                        border-radius: 4px;
-                       border-color: #d9d9d9;">
+                       border-color: #d9d9d9;" [ngClass]="{ 'is-invalid': submitted && f.service.errors }">
                           <option class="text-muted" value="">Select the service you need</option>
                           <option value="Web App Development">Web App Development</option>
                           <option value="Mobile App Development">Mobile App Development</option>
@@ -92,24 +111,33 @@
                           <option value="Data and Artificial Intelligence">Data and Artificial Intelligence</option>
                           <option value="QA and Software Testing">QA and Software Testing</option>
                        </select>
+                       <div *ngIf="submitted && f.service.errors" class="invalid-feedback">
+                        <div *ngIf="f.service.errors.required">Service is required</div>
+                    </div>
                       </div>
 
                     </div>
                     <div class="row">
 
                       <div class="col-md-6 form-group  mb-3">
-                        <input type="text" formControlName="organization" class="form-control" placeholder="Your organization" required>
+                        <input type="text" formControlName="organization" class="form-control" placeholder="Your organization" [ngClass]="{ 'is-invalid': submitted && f.organization.errors }">
+                        <div *ngIf="submitted && f.organization.errors" class="invalid-feedback">
+                          <div *ngIf="f.organization.errors.required">Organization is required</div>
+                      </div>
                       </div>
 
                       <div class="col-md-6 form-group mt-3 mt-md-0">
-                        <input type="email" class="form-control" formControlName="email" placeholder="E-mail" required>
+                        <input type="email" class="form-control" formControlName="email" placeholder="E-mail" [ngClass]="{ 'is-invalid': submitted && f.email.errors }">
+                        <div *ngIf="submitted && f.email.errors" class="invalid-feedback">
+                          <div *ngIf="f.email.errors.required">E-mail is required</div>
+                      </div>
                       </div>
 
                     </div>
 
                     <div class="form-group  mb-3 p-0">
                       <div class="col-md-12 form-group p-0">
-                       <select formControlName="budget" style="width: 100%;  height: 47px;border-color: #d9d9d9;">
+                       <select formControlName="budget" style="width: 100%;  height: 47px;border-color: #d9d9d9;" [ngClass]="{ 'is-invalid': submitted && f.budget.errors }">
                           <option class="text-muted">What is your budget? *</option>
                           <option value="Less than USD 50,000">Less than USD 50,000</option>
                           <option value="USD 50,000 - USD 100,000">USD 50,000 - USD 100,000</option>
@@ -117,11 +145,17 @@
                           <option value="USD 200,000 - USD 500,000">USD 200,000 - USD 500,000</option>
                           
                        </select>
+                       <div *ngIf="submitted && f.budget.errors" class="invalid-feedback">
+                        <div *ngIf="f.budget.errors.required">Budget is required</div>
+                    </div>
                       </div>
                     </div>
                       <h6>Technical information</h6>
                     <div class="form-group  mb-3">
-                      <textarea class="form-control" formControlName="techInfo" rows="7" placeholder="How can we help you?" required></textarea>
+                      <textarea class="form-control" formControlName="techInfo" rows="7" placeholder="How can we help you?" [ngClass]="{ 'is-invalid': submitted && f.techInfo.errors }"></textarea>
+                      <div *ngIf="submitted && f.techInfo.errors" class="invalid-feedback">
+                        <div *ngIf="f.techInfo.errors.required">Message is required</div>
+                    </div>
                     </div>
                     <!-- <div class="form-group  mb-3">
                       <label class="text-muted">Upload file [word document, powerpoint presentation or PDF file less than 20mb]</label>
@@ -149,36 +183,65 @@
                   <form [formGroup]="feedbackForm" (ngSubmit)="submitfeedbackForm()">
                     <div class="row">
                       <div class="col-md-6 form-group mb-3">
-                        <input type="text" formControlName="name" class="form-control" id="name" placeholder="Your Name" required>
+                        <input type="text" formControlName="name" class="form-control" id="name" placeholder="Your Name" [ngClass]="{ 'is-invalid': submitted && h.name.errors }">
+                        <div *ngIf="submitted && h.name.errors" class="invalid-feedback">
+                          <div *ngIf="h.name.errors.required">Name is required</div>
                       </div>
+                      </div>
+
                       <div class="col-md-6 form-group mt-3 mt-md-0">
-                        <input type="text" class="form-control" formControlName="addressOne" placeholder="Address 1" required>
+                        <input type="text" class="form-control" formControlName="addressOne" placeholder="Address 1" [ngClass]="{ 'is-invalid': submitted && h.addressOne.errors }">
+                        <div *ngIf="submitted && h.addressOne.errors" class="invalid-feedback">
+                          <div *ngIf="h.addressOne.errors.required">Address is required</div>
                       </div>
+                      </div>
+
                     </div>
                     <div class="row">
                       <div class="col-md-6 form-group  mb-3">
-                        <input type="text" formControlName="addressTwo" class="form-control" placeholder="Address 2" required>
+                        <input type="text" formControlName="addressTwo" class="form-control" placeholder="Address 2" [ngClass]="{ 'is-invalid': submitted && h.addressTwo.errors }">
+                        <div *ngIf="submitted && h.addressTwo.errors" class="invalid-feedback">
+                          <div *ngIf="h.addressTwo.errors.required">Address is required</div>
                       </div>
+                      </div>
+
                       <div class="col-md-6 form-group mt-3 mt-md-0">
-                        <input type="text" class="form-control" formControlName="city" placeholder="City" required>
+                        <input type="text" class="form-control" formControlName="city" placeholder="City" [ngClass]="{ 'is-invalid': submitted && h.city.errors }">
+                        <div *ngIf="submitted && h.city.errors" class="invalid-feedback">
+                          <div *ngIf="h.city.errors.required">City is required</div>
+                      </div>
                       </div>
                     </div>
 
                     <div class="form-group  mb-3">
-                      <input type="text" class="form-control" formControlName="subject" placeholder="Subject" required>
+                      <input type="text" class="form-control" formControlName="subject" placeholder="Subject" [ngClass]="{ 'is-invalid': submitted && h.subject.errors }">
+                      <div *ngIf="submitted && h.subject.errors" class="invalid-feedback">
+                        <div *ngIf="h.subject.errors.required">Subject is required</div>
+                    </div>
                     </div>
 
                     <div class="row">
                       <div class="col-md-6 form-group  mb-3">
-                        <input type="text" formControlName="phone" class="form-control" placeholder="Phone" required>
+                        <input type="number" formControlName="phone" class="form-control" placeholder="Phone" [ngClass]="{ 'is-invalid': submitted && h.phone.errors }">
+                        <div *ngIf="submitted && h.phone.errors" class="invalid-feedback">
+                          <div *ngIf="h.phone.errors.required">Phone is required</div>
+                      </div>
                       </div>
                       <div class="col-md-6 form-group mt-3 mt-md-0">
-                        <input type="email" class="form-control" formControlName="email" placeholder="E-mail" required>
+                        <input type="email" class="form-control" formControlName="email" placeholder="E-mail" [ngClass]="{ 'is-invalid': submitted && h.email.errors }">
+                        <div *ngIf="submitted && h.email.errors" class="invalid-feedback">
+                          <div *ngIf="h.email.errors.required">E-mail is required</div>
+                      </div>
                       </div>
                     </div>
 
                     <div class="form-group  mb-3">
-                      <textarea class="form-control" formControlName="feedback" rows="7" placeholder="Feedback" required></textarea>
+                      <textarea class="form-control" formControlName="feedback" rows="7" placeholder="Feedback" [ngClass]="{ 'is-invalid': submitted && h.feedback.errors }">
+
+                      </textarea>
+                      <div *ngIf="submitted && h.feedback.errors" class="invalid-feedback">
+                        <div *ngIf="h.feedback.errors.required">FeedBack is required</div>
+                    </div>
                     </div>
                     <!-- <div class="my-3">
                       <div class="loading">Loading</div>
