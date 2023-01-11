@@ -22,26 +22,12 @@
 
 
 
-    <!-- <section data-aos="fade-up" data-aos-delay="200">
-
-        
-        <div class="row d-flex">
-            <div class="col-md-4 text-center st_text">
-                <h6>Bespoke and Off-the-shelf  Software Solutions for Your  Unique Business Needs</h6>
-            </div>
-            <div class="col-md-6 st_para">
-                <p>We provide top-notch software solutions as a recognised leader in the software development industry and a digital partner to multinational corporations and start-ups. All phases of software development, from conception to delivery to security and maintenance, are covered by our software services. Our worldwide dispersed network of experienced talent is qualified to produce quick and reliable solutions, whether it be through the customization of an existing platform, the creation of prototype apps, or the design and implementation of complex technology solutions for businesses.</p>
-            </div>
-        </div>
-    </section> -->
-
-
-
-
     <section class="bg-light" data-aos="fade-up" data-aos-delay="200">
         <div class="row d-flex">
             <div class="col-md-6 text-center">
-                <h6 class="main_heading mb-5 mt-4">Our Services</h6>
+                <div class="section-title">
+                    <h2 class="mb-5 mt-4">Our Services</h2>
+                </div>
                 <div>
                     <div>
                         <button class="ms-2 service_btn me-2" [ngClass]="[isclicked==1? 'service_btn-active': '']" (click)="isClicked(1)">Technical Consulting </button>
@@ -110,43 +96,63 @@
         </div>
 
     </section>
-    <section >
-        <!-- Carousel wrapper -->
-        <!-- <mdb-carousel [controls]="true" [indicators]="true" [animation]="'fade'">
-            <mdb-carousel-item>
-              <img
-                src="https://mdbootstrap.com/img/Photos/Slides/img%20(15).webp"
-                class="d-block w-100"
-                alt="..."
-              />
-              <div class="carousel-caption d-none d-md-block">
-                <h5>First slide label</h5>
-                <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-              </div>
-            </mdb-carousel-item>
-            <mdb-carousel-item>
-              <img
-                src="https://mdbootstrap.com/img/Photos/Slides/img%20(22).webp"
-                class="d-block w-100"
-                alt="..."
-              />
-              <div class="carousel-caption d-none d-md-block">
-                <h5>Second slide label</h5>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-              </div>
-            </mdb-carousel-item>
-            <mdb-carousel-item>
-              <img
-                src="https://mdbootstrap.com/img/Photos/Slides/img%20(23).webp"
-                class="d-block w-100"
-                alt="..."
-              />
-              <div class="carousel-caption d-none d-md-block">
-                <h5>Third slide label</h5>
-                <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-              </div>
-            </mdb-carousel-item>
-          </mdb-carousel> -->
-  <!-- Carousel wrapper -->
+
+
+    <section>
+        <!-- 1 -->
+        <div class="containers">
+            <div class="section-title">
+                <h2 class="text-center">Operating Models</h2>
+            </div>
+            <div class="row d-flex mt-5 align-items-center">
+                <div class="col-lg-6 col-md-12 content_div text-center">
+                    <h4>Onshore Software Development</h4>
+                    <p>Onshore software development entails engaging with a development team in the same territory as your business center. This is a good choice when the work requires close collaboration with on-site specialists, and regular face-to-face communication is critical. We offer top-quality on-shore development from our development centers in USA, UK, LATAM and South Asia.</p>
+                </div>
+                <div class="col-lg-6 col-md-12 mt-5 text-center">
+                    <img class="operating_user" src="https://10pearls.com/wp-content/uploads/2022/12/2imageOP.webp" alt="logo">
+                </div>
+            </div>
+        </div>
+
+        <div class="containers bg-light">
+            <div class="row d-flex align-items-center">
+                <div class="col-lg-6 col-md-12 text-center" style="margin-top: 6%;">
+                    <img class="operating_user" src="https://10pearls.com/wp-content/uploads/2022/12/1imageOP.webp" alt="logo">
+                </div>
+                <div class="col-lg-6 col-md-12 content_div text-center">
+                    <h4>Nearshore Software Development</h4>
+                    <p>If you are looking for a development team to be available in the same time zone but aren’t particular about having them on-premises, having a team at a nearby location might be a suitable model for you. This model provides access to highly experienced resources who possess the same skills and workflow efficiencies as onshore resources – at a better value. The geographic proximity – resulting in better time zone alignment – also enables real-time, collaborative agile development cycle. With offices located at key locations in four continents, 10Pearls provide nearshore services to customers around the globe.</p>
+                </div>
+                
+            </div>
+
+        </div>
+         <!-- 2 -->
+         <div class="containers">
+            <div class="row d-flex mt-5 align-items-center">
+                <div class="col-lg-6 col-md-12 content_div text-center">
+                    <h4>Offshore Software Development</h4>
+                    <p>Offshore development – hiring an overseas development team – is a great solution when projects need large teams and quick delivery. It is an efficient approach to on-board excellent talent at scale while keeping the costs low. At 10Pearls, we have a large and diverse team, highly skilled in all latest and advanced technologies, and can be onboarded to provide end-to-end solutions, as well as 24/7 support and maintenance.</p>
+                </div>
+                <div class="col-lg-6 col-md-12 mt-5 text-center">
+                    <img class="operating_user" src="https://10pearls.com/wp-content/uploads/2022/12/offshore-sd-img-1024x696.webp" alt="logo">
+                </div>
+            </div>
+        </div>
+
+        <div class="containers bg-light">
+            <div class="row d-flex align-items-center">
+                <div class="col-lg-6 col-md-12 text-center" style="margin-top: 6%;">
+                    <img class="operating_user" src="https://10pearls.com/wp-content/uploads/2022/12/rightshore-sd-img-1024x696.webp" alt="logo">
+                </div>
+                <div class="col-lg-6 col-md-12 content_div text-center">
+                    <h4>Rightshore Software Development</h4>
+                    <p>There is no one-size-fits-all approach when it comes to software development models. Every organization has to understand their DNA and come up with a right shoring model. In Rightshore Software Development, a project’s origination/company’s business center identifies and follow a blended shore approach, where some key processes like Project Delivery, Architecture and UX/UI may be kept onshore/nearshore, and roles like software development, quality assurance, DevOps etc. could be outsourced at an offshore location.</p>
+                </div>
+                
+            </div>
+            
+        </div>
     </section>
 </section>
