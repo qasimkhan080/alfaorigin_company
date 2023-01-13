@@ -3,6 +3,9 @@
     font-size: 48px;
     margin-bottom: 2%;
 }
+.slideer{
+  margin-left: 2%;
+}
 .icon_good{
     color: #3498db;
     font-size: 48px;
@@ -19,7 +22,7 @@
     border-radius: 50px;
     transition: 0.5s;
     line-height: 1;
-    margin: 10px;
+    // margin: 10px;
     color: #fff;
     -webkit-animation-delay: 0.8s;
     animation-delay: 0.8s;
@@ -34,4 +37,29 @@
   //   width: 100%;
   //   height: 100%;
   // }
-  
+
+ //responsive 
+  @media only screen and (max-width: 500px){
+    .heading {
+      font-size: 23px;
+  }
+  .para {
+    font-size: 16px;
+    margin-right: 5%;
+    margin-left: 2%;
+    text-align: center;
+}
+.slideer{
+  margin-left: 0%;
+}
+.section-title h2 {
+  font-size: 17px;
+  margin-top: 3%;
+}
+.card-wrap:nth-child(odd) {
+  transform: translateY(0px);
+}
+.team .member .member-info {
+  padding: 0px 15px;
+}
+  }
