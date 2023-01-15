@@ -1,31 +1,42 @@
 
     <header id="header" class="fixed-top">
         <div class="container d-flex  justify-content-between">
-    
           <div>
-            <!-- <h1><a href="index.html">Alfa Origin</a></h1> -->
-            <!-- Uncomment below if you prefer to use an image logo -->
-    
-            <img class="CompanyLogo" src="assets/img/logo.jpg" alt="">
+            <img  class="CompanyLogo" src="assets/img/logo.jpg" alt="">
           </div>
     
-          <nav id="navbar" class="navbar">
-            <ul>
+            <nav class="navbar navbar-expand-lg navbar-light" style="justify-content: right;">
+              <div>
+                <button class="navbar-toggler" type="button"  data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+              </div>
+            
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav">
+                  <li class="nav-item active">
+                    <a class="nav-link" href="#hero">Home <span class="sr-only">(current)</span></a>
+                  </li>
+                  <li><a class="nav-link scrollto" routerLink="/services">Services</a></li>
+                  <li><a class="nav-link scrollto" href="#testimonials">Team</a></li>
+                  <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+                  <li><a class="getstarted mt-1" routerLink="/quickinquiry" target="_blank">QUICK INQUIRY</a></li>
+                </ul>
+              </div>
+            </nav>
+            <!-- <ul>
               <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
     
               <li><a class="nav-link scrollto" routerLink="/services">Services</a></li>
-              <!-- <li><a class="nav-link scrollto " href="#portfolio">Portfolio</a></li> -->
               <li><a class="nav-link scrollto" href="#testimonials">Team</a></li>
-              <!-- <li><a class="nav-link scrollto" href="#pricing">Pricing</a></li> -->
-    
               <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
               <li><a class="getstarted" routerLink="/quickinquiry" target="_blank">QUICK INQUIRY</a></li>
             </ul>
-            <i class="bi bi-list mobile-nav-toggle"></i>
-          </nav><!-- .navbar -->
+            <i class="bi bi-list mobile-nav-toggle"></i> -->
         </div>
+      
     </header>
-      <!-- End Header -->
+    
 <router-outlet></router-outlet>
 
 <footer id="footer">
@@ -44,6 +55,7 @@
             
           </div>
         </div>
+        
         <div class="col-lg-6">
           <nav class="footer-links text-lg-right text-center pt-2 pt-lg-0">
             <a href="#" class="scrollto">Home</a>
