@@ -185,6 +185,7 @@ h1, h2, h3, h4, h5, h6 {
     line-height: 1.8rem;
     letter-spacing: 0.1rem;
     margin-right: 5%;
+    text-align: justify;
 }
 
 #hero .btn-get-started {
@@ -667,14 +668,15 @@ section {
 }
 
 .flip-card-back {
-  background-color: #3a9ddf;
-  color:white;
+  background-color: white;
+  color:#313436;
   transform: rotateY(180deg);
   border-radius: 15px;
   align-items: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  line-height: 170%;
 
 }
 /* flip */
@@ -873,6 +875,7 @@ section {
   box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.08);
   position: relative;
   background: #fff;
+  margin-bottom: 5%;
 }
 
 .testimonials .testimonial-item .testimonial-img {
@@ -942,7 +945,7 @@ section {
   }
   .testimonials .testimonial-item {
     padding: 30px;
-    margin: 15px;
+    margin-bottom: 15%;
   }
   .testimonials .testimonial-item .testimonial-img {
     position: static;
@@ -1140,13 +1143,12 @@ section {
 /*--------------------------------------------------------------
 # Team
 --------------------------------------------------------------*/
-.team .member {
+/* .team .member {
   margin-bottom: 20px;
   overflow: hidden;
   text-align: center;
   border-radius: 5px;
-  /* background: #fff;
-  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1); */
+  
 }
 
 .team .member .member-img {
@@ -1217,7 +1219,7 @@ section {
 
 .team .member:hover .social {
   opacity: 1;
-}
+} */
 
 /*--------------------------------------------------------------
 # Pricing
@@ -1243,7 +1245,7 @@ section {
 }
 
 .pricing .box h4 {
-  font-size: 42px;
+  font-size: 27px;
   color: #3498db;
   font-weight: 500;
   font-family: "Open Sans", sans-serif;

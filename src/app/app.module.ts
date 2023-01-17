@@ -10,13 +10,15 @@ import { ServicesComponent } from './services/services.component';
 import { HttpClientModule } from '@angular/common/http';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { NgbCarouselModule } from '@ng-bootstrap/ng-bootstrap';
+import { WhyComponent } from './why/why.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     QuickInquiryComponent,
-    ServicesComponent
+    ServicesComponent,
+    WhyComponent
   ],
   imports: [
     BrowserModule,

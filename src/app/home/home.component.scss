@@ -7,10 +7,13 @@
   margin-left: 2%;
 }
 .icon_good{
-    color: #3498db;
+    color: #313436;
     font-size: 48px;
     margin-bottom: 3%;
     margin-top: 10%;
+}
+.prc_heading{
+  font-size: 12px;
 }
 .btn-get-started {
     font-family: "Muli", sans-serif;
@@ -30,6 +33,17 @@
     border: 2px solid #3498db;
     cursor: pointer;
   }
+  .btn_read_more{
+    color: #3498db;
+    font-weight: bold;
+  }
+  .top_slider{
+    // margin-bottom: 5%;
+  }
+.top_slider_img{
+  height:500px; 
+  width: 500px;
+}
 .animated {
     animation: up-down 2s ease-in-out infinite alternate-reverse both;
   }
@@ -40,14 +54,21 @@
 
  //responsive 
   @media only screen and (max-width: 500px){
+    .top_slider{
+      margin-bottom: 15%;
+    }
+    .top_slider_img{
+      height:300px; 
+      width: 300px;
+    }
     .heading {
       font-size: 23px;
   }
   .para {
     font-size: 16px;
-    margin-right: 5%;
+    margin-right: 7%;
     margin-left: 2%;
-    text-align: center;
+    text-align: left;
 }
 .slideer{
   margin-left: 0%;
