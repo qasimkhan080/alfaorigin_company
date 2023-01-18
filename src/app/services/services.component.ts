@@ -9,7 +9,7 @@ import { Router } from '@angular/router';
 export class ServicesComponent implements OnInit {
   isclicked:number=1
   isclickedtool:number=1
-  constructor() { }
+  constructor( private route:Router) { this.isclicked=this.route.getCurrentNavigation()?.extras?.state?.id?this.route.getCurrentNavigation()?.extras?.state?.id:this.isclicked }
 
   ngOnInit(): void {
   }

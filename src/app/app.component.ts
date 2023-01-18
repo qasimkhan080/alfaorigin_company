@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -7,6 +8,14 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'myapp';
+  constructor(private activatedRoute:ActivatedRoute){}
+  ngOnInit():void{
+    this.activatedRoute.fragment.subscribe(res=>{
+      this.jumpTo(res)
+    })
+    
+
+  }
   onActivate(event:any) {
  
     window.scroll({ 
@@ -14,7 +23,9 @@ export class AppComponent {
             left: 0, 
             behavior: 'smooth' 
      });
- 
-    
  }
+ jumpTo(section:any){
+  setTimeout(() =>{
+  document.getElementById(section)?.scrollIntoView({behavior:"smooth"});},1000);
+   }
 }

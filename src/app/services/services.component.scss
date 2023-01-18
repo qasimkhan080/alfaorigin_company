@@ -114,6 +114,7 @@
     font-size: 20px;
     font-weight: normal;
     margin-right: 10%;
+    text-align: justify;
 }
 .bar_itmes{
     padding: 28px;
@@ -229,16 +230,21 @@
        
     }
     .featured-ind-card {
-        margin-bottom: 5%;
+        margin-top: 5%;
     }
-    .section-title {
-        padding-bottom: 0px;
-        border-bottom: 1px solid#3498db;
-    }
-    .section-title h2::before, .section-title h2::after {
+    .top_heading h1{
         
-        display: none;
-      }
+        margin-top: 12%;
+        
+    }
+    // .section-title {
+    //     padding-bottom: 0px;
+    //     border-bottom: 1px solid#3498db;
+    // }
+    // .section-title h2::before, .section-title h2::after {
+        
+    //     display: none;
+    //   }
 }
 @media only screen and (max-width: 910px){
     .bar_itmes{
