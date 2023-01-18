@@ -13,7 +13,7 @@ contactForm: FormGroup | any;
 requestQuoteForm: FormGroup | any;
 feedbackForm: FormGroup | any;
 submitted = false;
-step: number = 2;
+step: number = 1;
   constructor(private apiService: ApiService, private fb: FormBuilder, private router: Router) { 
     this.step = this.router.getCurrentNavigation()?.extras?.state?.id?this.router.getCurrentNavigation()?.extras?.state?.id:this.step;
   }
@@ -35,9 +35,9 @@ step: number = 2;
     })
     this.feedbackForm = this.fb.group({
       name:[null, [Validators.required]],
-      addressOne:[null, [Validators.required]],
-      addressTwo:[null, [Validators.required]],
+      address:[null, [Validators.required]],
       city:[null, [Validators.required]],
+      country:[null, [Validators.required]],
       subject:[null, [Validators.required]],
       phone:[null, [Validators.required]],
       email:[null, [Validators.required,Validators.email]],

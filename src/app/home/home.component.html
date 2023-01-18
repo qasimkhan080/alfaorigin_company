@@ -1,50 +1,51 @@
 <section >
   <ngb-carousel >
+
     <ng-template ngbSlide>
-      <div class="row d-flex slideer  text-center">
+      <div class="row d-flex ms-4 mt-5 text-center top_slider ">
         <div class="col-lg-6 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center">
           <h1 class="heading" data-aos="fade-up">Software Development</h1>
           <h2 class="para mt-3" data-aos="fade-up" data-aos-delay="400">Leading customized solutions provider! 
-            Our highly experienced experts use state-of-the-art technology to deliver solutions that cater for your business needs. We offer services in Web Development, Mobile Application Development & Desktop Application Development,</h2>
+            Our highly experienced experts use state-of-the-art technology to deliver solutions that cater for your business needs. We offer services in Web Development, Mobile Application Development & Desktop Application Development.</h2>
           <div data-aos="fade-up" data-aos-delay="800">
-            <a class="btn-get-started scrollto mt-3" routerLink="/quickinquiry">Get Started</a>
+            <a class="btn-get-started scrollto mt-3" routerLink="/quickinquiry" >Free Consultation</a>
           </div>
         </div>
-        <div class="text-center col-lg-6 order-1 order-lg-2" data-aos="fade-left" data-aos-delay="200">
+        <div class="text-center col-lg-6 order-1 order-lg-2 top_slider_img" data-aos="fade-left" data-aos-delay="200">
           <img src="../../assets/img/animation_500_lcqmwr3p.gif" class="img-fluid animated" style="height: 90%;" alt="">
         </div>
       </div>
     </ng-template>
 
-    <!-- <ng-template ngbSlide>
-      <div class="row d-flex ms-4 mt-5 text-center">
-        <div class="col-lg-6 pt-5 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center">
+    <ng-template ngbSlide>
+      <div class="row d-flex ms-4 mt-5 text-center top_slider ">
+        <div class="col-lg-6 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center">
           <h1 class="heading" data-aos="fade-up">Branding</h1>
           <h2 class="para mt-3" data-aos="fade-up" data-aos-delay="400">Our team of branding specialists will create a branding strategy that incorporates everything ranging from logo design, packaging, strong visual identity to product taglines. We provide extensive market analysis to guide your business decisions.</h2>
           <div data-aos="fade-up" data-aos-delay="800">
-            <a class="btn-get-started scrollto mt-3" routerLink="/quickinquiry" >Get Started</a>
+            <a class="btn-get-started scrollto mt-3" routerLink="/quickinquiry" >Free Consultation</a>
           </div>
         </div>
-        <div class="text-center col-lg-6 order-1 order-lg-2" data-aos="fade-left" data-aos-delay="200" style="height:500px; width: 500px;" >
+        <div class="text-center col-lg-6 order-1 order-lg-2 top_slider_img" data-aos="fade-left" data-aos-delay="200">
           <img src="../../assets/img/slider/branding.gif" class="img-fluid animated" style="height: 90%;" alt="">
         </div>
       </div>
     </ng-template>
 
     <ng-template ngbSlide>
-      <div class="row d-flex ms-4 mt-5 text-center">
-        <div class="col-lg-6 pt-5 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center">
+      <div class="row d-flex ms-4 mt-5 text-center top_slider">
+        <div class="col-lg-6 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center">
           <h1 class="heading" data-aos="fade-up">Consultancy</h1>
           <h2 class="para mt-3" data-aos="fade-up" data-aos-delay="400">We provide tehnical workforce for our clients to turn their dreams into reality. We are revolutionizing product devlopment, our clients can direct the development by monitoring, providing feedback and suggesting changes at development stage.</h2>
           <div data-aos="fade-up" data-aos-delay="800">
-            <a class="btn-get-started scrollto mt-3" routerLink="/quickinquiry">Get Started</a>
+            <a class="btn-get-started scrollto mt-3" routerLink="/quickinquiry">Free Consultation</a>
           </div>
         </div>
-        <div class="text-center col-lg-6 order-1 order-lg-2" data-aos="fade-left" data-aos-delay="200">
+        <div class="text-center col-lg-6 order-1 order-lg-2 top_slider_img" data-aos="fade-left" data-aos-delay="200">
           <img src="../../assets/img/slider/consultancey.gif" class="img-fluid animated" style="height: 90%;" alt="">
         </div>
       </div>
-    </ng-template> -->
+    </ng-template>
    
   </ngb-carousel>
 </section>
@@ -69,7 +70,7 @@
                 </div>
                 <div class="flip-card-back">
                   <p class="p-2">Your website will be aesthetically appealing and perform optimally to attract users and make them your customers</p> 
-                  <button class="btn" routerLink="/services">Read More</button>
+                  <button class="btn btn_read_more" routerLink="/services" fragment="ourservices" [state]="{id:1}" >Read More <span><img width="20" src="../../assets/img/arrow-right-5-circle-svgrepo-com.svg" alt=""></span></button>
                 </div>
               </div>
             </div>
@@ -84,7 +85,7 @@
                 </div>
                 <div class="flip-card-back">
                   <p class="p-2">We provide your applications with responsive, interactive design to engage your customers</p> 
-                  <button class="btn" routerLink="/services">Read More</button>
+                  <button class="btn btn_read_more"  routerLink="/services" fragment="ourservices" [state]="{id:2}">Read More <span><img width="20" src="../../assets/img/arrow-right-5-circle-svgrepo-com.svg" alt=""></span></button>
                 </div>
               </div>
             </div>
@@ -95,11 +96,11 @@
                   <div>
                     <img src="../../assets/img/SEo.svg" width="120" height="120" alt="">
                   </div>
-                  <h1  class="flip-heading mt-3">Search Engine Optimization</h1> 
+                  <h1  class="flip-heading mt-3">Software Testing</h1> 
                 </div>
                 <div class="flip-card-back">
                   <p class="p-2"> Our services include keyword research, on-page optimization, technical SEO , content creation, marketing, and link building </p> 
-                  <button class="btn" routerLink="/services">Read More</button>
+                  <button class="btn btn_read_more" routerLink="/services" fragment="ourservices" [state]="{id:3}" >Read More <span><img width="20" src="../../assets/img/arrow-right-5-circle-svgrepo-com.svg" alt=""></span></button>
                 </div>
               </div>
             </div>
@@ -114,7 +115,7 @@
                 </div>
                 <div class="flip-card-back">
                   <p class="p-2">Our services to digital marketing include, SEO optimization, PPC advertising, social media marketing, Email marketing and more</p> 
-                  <button class="btn" routerLink="/services">Read More</button>
+                  <button class="btn btn_read_more" routerLink="/services" fragment="ourservices" [state]="{id:4}" >Read More <span><img width="20" src="../../assets/img/arrow-right-5-circle-svgrepo-com.svg" alt=""></span></button>
                 </div>
               </div>
             </div>
@@ -129,7 +130,7 @@
                 </div>
                 <div class="flip-card-back">
                   <p class="p-2">We seek to provide our clients best UI/UX experience by providing aesthetically pleasing design with cross-browser support</p> 
-                  <button class="btn" routerLink="/services">Read More</button>
+                  <button class="btn btn_read_more" routerLink="/services" fragment="ourservices" [state]="{id:5}">Read More <span><img width="20" src="../../assets/img/arrow-right-5-circle-svgrepo-com.svg" alt=""></span></button>
                 </div>
               </div>
             </div>
@@ -144,7 +145,7 @@
                 </div>
                 <div class="flip-card-back">
                   <p class="p-2">We provide relentless suport, and our teams are available to you at your convinience 24/7</p> 
-                  <button class="btn" routerLink="/services">Read More</button>
+                  <button class="btn btn_read_more" routerLink="/services" fragment="ourservices" [state]="{id:6}">Read More <span><img width="20" src="../../assets/img/arrow-right-5-circle-svgrepo-com.svg" alt=""></span></button>
                 </div>
               </div>
             </div>
@@ -159,7 +160,7 @@
                 </div>
                 <div class="flip-card-back">
                   <p class="p-2">Our team of branding specialists will develop a branding strategy that includes everything from logo design, packaging, and strong visual identity</p> 
-                  <button class="btn" routerLink="/services">Read More</button>
+                  <button class="btn btn_read_more" routerLink="/services" fragment="ourservices" [state]="{id:7}">Read More <span><img width="20" src="../../assets/img/arrow-right-5-circle-svgrepo-com.svg" alt=""></span></button>
                 </div>
               </div>
             </div>
@@ -174,12 +175,16 @@
                 </div>
                 <div class="flip-card-back">
                   <p class="p-2">We cover wide range of area from strategy, planning, implementation and optimization</p> 
-                  <button class="btn" routerLink="/services">Read More</button>
+                  <button class="btn btn_read_more" routerLink="/services" fragment="ourservices" [state]="{id:8}">Read More <span><img width="20" src="../../assets/img/arrow-right-5-circle-svgrepo-com.svg" alt=""></span></button>
                 </div>
               </div>
             </div>
+
           </div>
+
         </div>
+        <div class="text-end p-0 me-5 "><button class="btn btn_read_more" routerLink="/quickinquiry" [state]="{id:1}">Free Appointment <span><img width="20" src="../../assets/img/arrow-right-5-circle-svgrepo-com.svg" alt=""></span></button></div>
+
     </section>
     <!-- How it Works -->
     <section id="works" class="works section-bg">
@@ -288,7 +293,7 @@
       
         </div>
     </section>
-    <!-- Our Team -->
+    <!-- Our testimonials -->
     <section id="testimonials" class="testimonials section-bg">
 
       
@@ -300,25 +305,26 @@
           </div>
           <ngb-carousel>
             <ng-template ngbSlide>
-              <div class="testimonials-slider swiper-container" data-aos="fade-up" data-aos-delay="100">
-                <div class="swiper-wrapper">
-                  
-                  <div class="swiper-slide">
-                    <div class="testimonial-wrap">
-                      <div class="testimonial-item">
-                        <h3>ZAQ</h3>
-                        <h4>CEO & Founder</h4>
-                        <p>
-                          <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                          ZAQ is the CEO at Alfa Origin. Mr Zaq has vast experience in Business Development and Manging the operations in the organization.
-                          <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                        </p>
+              <div>
+                <div class="testimonials-slider swiper-container" data-aos="fade-up" data-aos-delay="100">
+                  <div class="swiper-wrapper">
+                    
+                    <div class="swiper-slide">
+                      <div class="testimonial-wrap">
+                        <div class="testimonial-item">
+                          <h3>ZAQ</h3>
+                          <h4>CTO </h4>
+                          <p>
+                            <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                            The staff and management are second to none. They are professional, proficient, skilled and cater for client requirements in an optimal manner.
+                            <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                          </p>
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
-          
             </ng-template>
 
             <ng-template ngbSlide>
@@ -329,10 +335,10 @@
                     <div class="testimonial-wrap">
                       <div class="testimonial-item">
                         <h3>John Larson</h3>
-                        <h4>Director</h4>
+                        <h4>CEO</h4>
                         <p>
                           <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                          John is technical director at AlfaOrigin,vastly experienced in product development and leading multiple products very efficiently.
+                          Absolutely marvelous work, on-time delivery and very cooperative support.
                           <i class="bx bxs-quote-alt-right quote-icon-right"></i>
                         </p>
                       </div>
@@ -340,36 +346,19 @@
                   </div>
                 </div>
               </div>
-          
             </ng-template>
+
             <ng-template ngbSlide>
               <div class="testimonials-slider swiper-container" data-aos="fade-up" data-aos-delay="100">
                 <div class="swiper-wrapper">
-                  
                   <div class="swiper-slide">
                     <div class="testimonial-wrap">
                       <div class="testimonial-item">
                         <h3>Sara Wilsson</h3>
-                        <h4>Designer</h4>
+                        <h4>CTO</h4>
                         <p>
                           <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                          Sara is UI/UX designer at AlfaOrigin, she has is quite adept at creating interactive design that provide great user exprerience.
-                          <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                 
-                  <div class="swiper-slide">
-                    <div class="testimonial-wrap">
-                      <div class="testimonial-item">
-                        <img src="assets/img/qasim.jpg" class="testimonial-img" alt="">
-                        <h3>Qasim Khan Niazi</h3>
-                        <h4>CEO Alpha Origin </h4>
-                        <p>
-                          <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                          As a Enterpenure and It Expert. Qasim Niazi is the CEO of AlfaOrigin.Mr Qasim have vast experience in 
-                          IT industryand and as well as in the Digital marketing industry with ambitious goal of problem solving and job creation for people.
+                          State-of-the-art interactive design, with extreme user friendliness; application was delivered flawlessly.
                           <i class="bx bxs-quote-alt-right quote-icon-right"></i>
                         </p>
                       </div>
@@ -377,8 +366,8 @@
                   </div>
                 </div>
               </div>
-          
             </ng-template>
+
           </ngb-carousel>
 
 
@@ -389,60 +378,60 @@
     <section id="pricing" class="pricing">
         <div class="container">
           <div class="section-title">
-            <h2>Pricing</h2>
-            <p>Choose your perfect plans</p>
+            <h2>Our Pricing Plan</h2>
+            <p>Every business should have their shot at success, so we’ve got a pricing plan to suit every budget. Our three models are all priced to suit businesses at different stages and sizes.</p>
           </div>
+
+
           <div class="row">
             <div class="col-lg-4 col-md-6" >
               <div (click)="priceCard(1)" [ngClass]="[card==1?'recommended':'']" class="box" data-aos="zoom-in-right" data-aos-delay="200">
-                <h3>Primary Website Package</h3>
-                <h4><sup>$</sup>0<span> / month</span></h4>
-                <ul>
-                  <li>Design</li>
-                  <li>Mocks</li>
-                  <li>Free google friendly sitemap</li>
-                  <li>One Page Website</li>
-                  <li >Demo</li>
-                  <li >DFD Demo</li>
+                <h3>Early MVP</h3>
+                <h4>Start-ups in early stages</h4>
+                <ul >
+                  <li class=" d-flex"><img class="me-3" width="20" src="../../assets/img/success-svgrepo-com.svg" alt="">We manage the team</li>
+                  <li class=" d-flex "><img class="me-3" width="20" src="../../assets/img/success-svgrepo-com.svg" alt="">Deliver basic MVP</li>
+                  <li class=" d-flex "><img class="me-3" width="20" src="../../assets/img/success-svgrepo-com.svg" alt="">We manage the team</li>
+                  <li class=" d-flex"><img class="me-3" width="20" src="../../assets/img/success-svgrepo-com.svg" alt="">We manage the team</li>
+                  <li class=" d-flex"><img class="me-3" width="20" src="../../assets/img/success-svgrepo-com.svg" alt="">We manage the team</li>
+
                 </ul>
                 <div class="btn-wrap">
-                  <a class="btn-buy" routerLink="/quickinquiry" [state]="{id:1}">Buy Now</a>
+                  <a class="btn-buy" routerLink="/quickinquiry" [state]="{id:2}">Apply Now</a>
                 </div>
               </div>
             </div>
 
             <div class="col-lg-4 col-md-6 mt-4 mt-md-0">
               <div (click)="priceCard(2)" [ngClass]="[card==2?'recommended':'']"  class="box"  data-aos="zoom-in" data-aos-delay="100">
-                <h3>Startup Website Package</h3>
-                <h4><sup>$</sup>400<span> / month</span></h4>
+                <h3>Turn Key</h3>
+                <h4>Validated Businesses</h4>
                 <ul>
-                  <li>5 page website</li>
-                  <li>3 Banner design</li>
-                  <li>Free google friendly sitemap</li>
-                  <li>100% unique design gaurantee</li>
-                  <li>Mobile responsive will be additional $200*</li>
-                  <li>CMS will be additional $300*</li>
+                  <li class=" d-flex"><img class="me-3" width="20" src="../../assets/img/success-svgrepo-com.svg" alt="">We manage the team</li>
+                  <li class=" d-flex "><img class="me-3" width="20" src="../../assets/img/success-svgrepo-com.svg" alt="">Deliver complete working product</li>
+                  <li class=" d-flex "><img class="me-3" width="20" src="../../assets/img/success-svgrepo-com.svg" alt="">Part time CTO</li>
+                  <li class=" d-flex"><img class="me-3" width="20" src="../../assets/img/success-svgrepo-com.svg" alt="">$10-20K and 10% equity</li>
+                  <li class=" d-flex"><img class="me-3" width="20" src="../../assets/img/success-svgrepo-com.svg" alt="">Equity mutually decided</li>
                 </ul>
                 <div class="btn-wrap">
-                  <a href="#" class="btn-buy" routerLink="/quickinquiry" [state]="{id:1}">Buy Now</a>
+                  <a href="#" class="btn-buy" routerLink="/quickinquiry" [state]="{id:2}">Apply Now</a>
                 </div>
               </div>
             </div>
 
             <div class="col-lg-4 col-md-6 mt-4 mt-lg-0" >
               <div (click)="priceCard(3)" [ngClass]="[card==3?'recommended':'']" class="box" data-aos="zoom-in-left" data-aos-delay="200">
-                <h3>Executive Website Package</h3>
-                <h4><sup>$</sup>800<span> / month</span></h4>
+                <h3>Dedicated Team                </h3>
+                <h4>Growing start-ups</h4>
                 <ul>
-                  <li>10 unique pages website</li>
-                  <li>CMS / Admin Panel Support</li>
-                  <li>Mobile Responsive</li>
-                  <li>Complete Deployment</li>
-                  <li>100% unique design gaurantee</li>
-                  <li>100% Satisfaction gaurantee*</li>
+                  <li class=" d-flex"><img class="me-3" width="20" src="../../assets/img/success-svgrepo-com.svg" alt="">You manage the team</li>
+                  <li class=" d-flex "><img class="me-3" width="20" src="../../assets/img/success-svgrepo-com.svg" alt="">Deliverable decided by you</li>
+                  <li class=" d-flex "><img class="me-3" width="20" src="../../assets/img/success-svgrepo-com.svg" alt="">Project Manager</li>
+                  <li class=" d-flex"><img class="me-3" width="20" src="../../assets/img/success-svgrepo-com.svg" alt="">$3K to $20K/month and equity</li>
+                  <li class=" d-flex"><img class="me-3" width="20" src="../../assets/img/success-svgrepo-com.svg" alt="">Equity mutually decided</li>
                 </ul>
                 <div class="btn-wrap">
-                  <a href="#" class="btn-buy" routerLink="/quickinquiry" [state]="{id:1}">Buy Now</a>
+                  <a href="#" class="btn-buy" routerLink="/quickinquiry" [state]="{id:2}">Apply Now</a>
                 </div>
               </div>
             </div>
@@ -461,10 +450,10 @@
   
           <div class="row">
   
-            <div class="col-lg-5 col-md-12 containersss" data-aos="fade-up" data-aos-delay="100">
+            <div class="col-lg-12 col-md-12 containersss" data-aos="fade-up" data-aos-delay="100">
               <div class="cont">
                 <h3>Alfa Origin</h3>
-                <p>AlphaOrigin was shaped with the aim to convey quality products meeting the determinations
+                <p>Alpha Origin was shaped with the aim to convey quality products meeting the determinations
                   and requirements of the clients, economically, in-time, in the effective & prudent
                   manner. Our administration never compromises on the quality & security of the products. We aspire to exceed your expectation in terms of deliverance. We wish to grow trust with our partners and cater for their needs.</p>
                 <!-- <div class="social-links">
@@ -479,7 +468,7 @@
             <div class="col-lg-1 col-md-6 mt-4 mt-md-0" data-aos="fade-up" data-aos-delay="200">
   
             </div>
-  
+<!--   
             <div class="col-lg-6 col-md-12" data-aos="fade-up" data-aos-delay="300">
   
               <div class="info">
@@ -508,7 +497,7 @@
                 <a href="https://pk.linkedin.com/company/zeetech072?trk=public_profile_topcard-current-company" target="_blank" class="linkedin"><i class="bi bi-linkedin"></i></a>
               </div>
   
-            </div>
+            </div> -->
   
           </div>
   

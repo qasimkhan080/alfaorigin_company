@@ -2,35 +2,36 @@
 <section id="contact">
     <div class="container-fluid" data-aos="fade-up">
 
-      <div class="row form_mrg">
+      <div class="row form_mrg ">
 
 <!-- form -->
-        <div class="col-lg-6  ">
+   <div class="row">
+         <div class="col-lg-6  ">
           <div class="row">
             <div class="contact_tab d-flex">
               <ul>
                   <li>
-                      <a  (click)="changeStep(1)" [ngClass]="[step==1?'activeSubMenu':'']">Contact</a>
+                      <a  (click)="changeStep(1)" [ngClass]="[step==1?'activeSubMenu':'']" routerLink="/quickinquiry" fragment="contact">Contact</a>
                   </li>
                   
                   <li>
-                      <a (click)="changeStep(2)" [ngClass]="[step==2?'activeSubMenu':'']">Request Quote</a>
+                      <a (click)="changeStep(2)" [ngClass]="[step==2?'activeSubMenu':'']"routerLink="/quickinquiry" fragment="requestquote">Request Quote</a>
                   </li>
                   <li>
-                      <a (click)="changeStep(3)" [ngClass]="[step==3?'activeSubMenu':'']">Feedback</a>
+                      <a (click)="changeStep(3)" [ngClass]="[step==3?'activeSubMenu':'']"routerLink="/quickinquiry" fragment="feedback">Feedback</a>
                   </li>
               </ul>
           </div>
           </div>
 
-          <div class="form">
+          <div class="form w-100">
             <div *ngIf="step==1" class="container bg-shadow" data-aos="fade-up">
             
               <div class="section-header">
                 <!-- <h2 class="m-2 p-2">Contact</h2> -->
               </div>
       
-              <div class="row gx-lg-0 gy-4">
+              <div class="row gx-lg-0 gy-4 mt-2">
       
                 <div class="col-lg-12">
                   <form [formGroup]="contactForm" (ngSubmit)="submitContactForm()">
@@ -85,7 +86,7 @@
                 <!-- <p>We would be delighted to provide you with an accurate, fixed price quotation based upon your needs.</p> -->
               </div>
       
-              <div class="row gx-lg-0 gy-4">
+              <div class="row gx-lg-0 gy-4 mt-2">
       
                 <div class="col-lg-12">
                   <form [formGroup]="requestQuoteForm" (ngSubmit)="submitRequestQuoteForm()">
@@ -104,12 +105,14 @@
                        border-radius: 4px;
                        border-color: #d9d9d9;" [ngClass]="{ 'is-invalid': submitted && f.service.errors }">
                           <option class="text-muted" value="">Select the service you need</option>
-                          <option value="Web App Development">Web App Development</option>
+                          <option value="Web Development">Web Development</option>
                           <option value="Mobile App Development">Mobile App Development</option>
-                          <option value="Education Technology">Education Technology</option>
-                          <option value="Web Scraping">Web Scraping </option>
-                          <option value="Data and Artificial Intelligence">Data and Artificial Intelligence</option>
-                          <option value="QA and Software Testing">QA and Software Testing</option>
+                          <option value="Software Testing">Software Testing</option>
+                          <option value="Digital Marketing">Digital Marketing </option>
+                          <option value="UX/UI Design and Ideation">UX/UI Design and Ideation</option>
+                          <option value="24/7 Support">24/7 Support</option>
+                          <option value="Branding">Branding</option>
+                          <option value="Consultancy">Consultancy</option>
                        </select>
                        <div *ngIf="submitted && f.service.errors" class="invalid-feedback">
                         <div *ngIf="f.service.errors.required">Service is required</div>
@@ -137,7 +140,10 @@
 
                     <div class="form-group  mb-3 p-0">
                       <div class="col-md-12 form-group p-0">
-                       <select formControlName="budget" style="width: 100%;  height: 47px;border-color: #d9d9d9;" [ngClass]="{ 'is-invalid': submitted && f.budget.errors }">
+                       <select formControlName="budget"style="width: 100%;
+                       height: 38px;
+                       border-radius: 4px;
+                       border-color: #d9d9d9;" [ngClass]="{ 'is-invalid': submitted && f.budget.errors }">
                           <option class="text-muted">What is your budget? *</option>
                           <option value="Less than USD 50,000">Less than USD 50,000</option>
                           <option value="USD 50,000 - USD 100,000">USD 50,000 - USD 100,000</option>
@@ -177,7 +183,7 @@
                 <!-- <h2 class="p-2">FEEDBACK</h2> -->
               </div>
       
-              <div class="row gx-lg-0 gy-4">
+              <div class="row gx-lg-0 gy-4 mt-2">
       
                 <div class="col-lg-12">
                   <form [formGroup]="feedbackForm" (ngSubmit)="submitfeedbackForm()">
@@ -190,25 +196,25 @@
                       </div>
 
                       <div class="col-md-6 form-group mt-3 mt-md-0">
-                        <input type="text" class="form-control" formControlName="addressOne" placeholder="Address 1" [ngClass]="{ 'is-invalid': submitted && h.addressOne.errors }">
-                        <div *ngIf="submitted && h.addressOne.errors" class="invalid-feedback">
-                          <div *ngIf="h.addressOne.errors.required">Address is required</div>
+                        <input type="text" class="form-control" formControlName="address" placeholder="Address" [ngClass]="{ 'is-invalid': submitted && h.address.errors }">
+                        <div *ngIf="submitted && h.address.errors" class="invalid-feedback">
+                          <div *ngIf="h.address.errors.required">Address is required</div>
                       </div>
                       </div>
 
                     </div>
                     <div class="row">
                       <div class="col-md-6 form-group  mb-3">
-                        <input type="text" formControlName="addressTwo" class="form-control" placeholder="Address 2" [ngClass]="{ 'is-invalid': submitted && h.addressTwo.errors }">
-                        <div *ngIf="submitted && h.addressTwo.errors" class="invalid-feedback">
-                          <div *ngIf="h.addressTwo.errors.required">Address is required</div>
+                        <input type="text" formControlName="city" class="form-control" placeholder="City" [ngClass]="{ 'is-invalid': submitted && h.city.errors }">
+                        <div *ngIf="submitted && h.city.errors" class="invalid-feedback">
+                          <div *ngIf="h.city.errors.required">City is required</div>
                       </div>
                       </div>
 
                       <div class="col-md-6 form-group mt-3 mt-md-0">
-                        <input type="text" class="form-control" formControlName="city" placeholder="City" [ngClass]="{ 'is-invalid': submitted && h.city.errors }">
-                        <div *ngIf="submitted && h.city.errors" class="invalid-feedback">
-                          <div *ngIf="h.city.errors.required">City is required</div>
+                        <input type="text" class="form-control" formControlName="Country" placeholder="Country" [ngClass]="{ 'is-invalid': submitted && h.country.errors }">
+                        <div *ngIf="submitted && h.country.errors" class="invalid-feedback">
+                          <div *ngIf="h.country.errors.required">Country is required</div>
                       </div>
                       </div>
                     </div>
@@ -237,7 +243,6 @@
 
                     <div class="form-group  mb-3">
                       <textarea class="form-control" formControlName="feedback" rows="7" placeholder="Feedback" [ngClass]="{ 'is-invalid': submitted && h.feedback.errors }">
-
                       </textarea>
                       <div *ngIf="submitted && h.feedback.errors" class="invalid-feedback">
                         <div *ngIf="h.feedback.errors.required">FeedBack is required</div>
@@ -260,11 +265,12 @@
           </div>
         </div>
 <!-- map -->
-<div class="col-lg-6 col-md-6 mt-5 d-flex justify-content-center align-items-center">
+<div class="col-lg-6 col-sm-4 col-xs-4 mt-5 d-flex justify-content-center align-items-center">
 <div class="map mb-4 mb-lg-0 w-75">
-  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d207.60301705068022!2d73.06617416100596!3d33.640360737030946!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38df953481ad3b83%3A0x46ff904f0e17621a!2sNAZO&#39;S%20AL%20ARAB%20Beutysalon!5e0!3m2!1sen!2s!4v1673648326593!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  <iframe class="w-100 mapp" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d207.60301705068022!2d73.06617416100596!3d33.640360737030946!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38df953481ad3b83%3A0x46ff904f0e17621a!2sNAZO&#39;S%20AL%20ARAB%20Beutysalon!5e0!3m2!1sen!2s!4v1673648326593!5m2!1sen!2s" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 </div>
 </div>
+   </div>
 
       </div>
 

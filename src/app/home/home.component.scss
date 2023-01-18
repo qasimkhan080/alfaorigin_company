@@ -1,65 +1,79 @@
-.icons{
-    color: #3498db;
-    font-size: 48px;
-    margin-bottom: 2%;
+.icons {
+  color: #3498db;
+  font-size: 48px;
+  margin-bottom: 2%;
 }
-.slideer{
+.slideer {
   margin-left: 2%;
 }
-.icon_good{
-    color: #3498db;
-    font-size: 48px;
-    margin-bottom: 3%;
-    margin-top: 10%;
+.icon_good {
+  color: #313436;
+  font-size: 48px;
+  margin-bottom: 3%;
+  margin-top: 10%;
+}
+.prc_heading {
+  font-size: 12px;
 }
 .btn-get-started {
-    font-family: "Muli", sans-serif;
-    font-weight: 500;
-    font-size: 14px;
-    letter-spacing: 1px;
-    display: inline-block;
-    padding: 12px 32px;
-    border-radius: 50px;
-    transition: 0.5s;
-    line-height: 1;
-    // margin: 10px;
-    color: #fff;
-    -webkit-animation-delay: 0.8s;
-    animation-delay: 0.8s;
-    background-color: #3498db;
-    border: 2px solid #3498db;
-    cursor: pointer;
-  }
-.animated {
-    animation: up-down 2s ease-in-out infinite alternate-reverse both;
-  }
-  // .hero-img{
-  //   width: 100%;
-  //   height: 100%;
-  // }
+  font-family: "Muli", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 12px 32px;
+  border-radius: 50px;
+  transition: 0.5s;
+  line-height: 1;
+  color: #fff;
+  -webkit-animation-delay: 0.8s;
+  animation-delay: 0.8s;
+  background-color: #3498db;
+  border: 2px solid #3498db;
+  cursor: pointer;
+}
+.btn_read_more {
+  color: #3498db;
+  font-weight: bold;
+}
 
- //responsive 
-  @media only screen and (max-width: 500px){
-    .heading {
-      font-size: 23px;
+.top_slider_img {
+  height: 500px;
+  width: 500px;
+}
+.animated {
+  animation: up-down 2s ease-in-out infinite alternate-reverse both;
+}
+
+//responsive
+@media only screen and (max-width: 500px) {
+  .top_slider {
+    margin-bottom: 15%;
+  }
+  .top_slider_img {
+    height: 300px;
+    width: 300px;
+  }
+  .heading {
+    font-size: 23px;
   }
   .para {
     font-size: 16px;
-    margin-right: 5%;
+    margin-right: 7%;
     margin-left: 2%;
-    text-align: center;
-}
-.slideer{
-  margin-left: 0%;
-}
-.section-title h2 {
-  font-size: 17px;
-  margin-top: 3%;
-}
-.card-wrap:nth-child(odd) {
-  transform: translateY(0px);
-}
-.team .member .member-info {
-  padding: 0px 15px;
-}
+    text-align: left;
   }
+  .slideer {
+    margin-left: 0%;
+  }
+  .section-title h2 {
+    font-size: 17px;
+    margin-top: 3%;
+  }
+  .card-wrap:nth-child(odd) {
+    transform: translateY(0px);
+  }
+  .team .member .member-info {
+    padding: 0px 15px;
+  }
+}

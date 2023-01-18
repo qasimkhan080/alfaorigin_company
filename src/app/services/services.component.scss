@@ -1,21 +1,36 @@
-.mmm{
-    // margin-top: 6%;
-}
+
 .hello{
-    background-image: url("https://10pearls.com/wp-content/uploads/2022/12/bannerWP-2022.png");
-    opacity: 0.5;
-    height: 650px;
-    // background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+    position: relative;
+    z-index: -1;
+    height: 550px;
 }
+.background {
+    position: absolute;
+    object-fit:cover;
+    left: 0px;
+    top: 0px;
+    z-index: -1;
+    width: 100%;
+    height: 550px;
+    -webkit-filter: blur(5px); /* Safari 6.0 - 9.0 */
+    filter: blur(5px);
+    }
 .top_heading {
-    text-align: center;
-    margin-top: 5%;
+    text-align: left;
+    
 }
-.top_heading h1 ,p{
+.top_heading h1{
     color:black ;
-    // opacity: ;
+    margin-top: 5%;
+    margin-left: 10%;
+    font-size: 38px;
+    font-weight: bold;
+}
+.top_heading p{
+    color:black ;
+    margin-left: 10%;
+    font-size: 18px;
+    font-weight: bold;
 }
 .st_text h6{
     color: #3498db;
@@ -23,8 +38,6 @@
     font-size: 30px;
     line-height: 2em;
     margin-right: 5%;
-    // text-align: justify;
-
 }
 .st_para p{
     color: #020101;
@@ -72,12 +85,6 @@
     text-align: justify;
 
 }
-// .main_heading{
-//     color: #3498db ;
-//     font-size: 36px;
-//     font-weight: bold;
-//     line-height: 1.15em;
-// }
 .card_body img{
     width: 52px;
     filter: brightness(0) invert(1);
@@ -92,12 +99,6 @@
     height: 90%;
     border-radius: 30px;
 }
-// .heading{
-//     margin-bottom: 5%;
-//     color: #3498db;
-//     font-size: 36px;
-//     font-weight: 700;
-// }
 .content_div h4{
     font-size: 26px;
     letter-spacing: 0.5px;
@@ -111,4 +112,140 @@
     font-size: 20px;
     font-weight: normal;
     margin-right: 10%;
+    text-align: justify;
+}
+.bar_itmes{
+    padding: 28px;
+  
+}
+.isclickedtool{
+    border-bottom: 3px solid #3498db;
+}
+.bar_itmes a{
+    text-decoration: none!important;
+    font-size: 18px;
+    color: #757575;
+    font-weight: 700;
+    cursor: pointer;
+    padding-bottom: 14% !important;
+    border-width: 15% !important;
+
+}
+.bar_box ul{
+    margin: 30px auto;
+    padding: 0 2px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.bar_box li{
+    list-style: none;
+    margin: 0 0 30px 0;
+    text-align: center;
+}
+.bar_box_logo{
+    background-color: #ffffff;
+    padding: 14px 20px;
+    height: 100px;
+    line-height: 66px;
+     width: 222px; 
+    margin-bottom: 10px;
+  border: 1px solid lightgrey; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: -1px;
+}
+.bar_box_logo img{
+    height: 60px;
+    max-height: 80px;
+    height: auto;
+    width: auto;
+     max-width: 90%;
+}
+// features
+.feature{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.feature ul{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+
+.fetured-ind-list-item {
+    margin-right: 3%;
+    margin-bottom: 3%;
+}
+.featured-ind-card {
+    display: flex;
+    align-items: center;
+    text-decoration: none !important;
+    width: 283px;
+    background: #fff;
+    border-radius: 46px;
+    height: 65px;
+}
+.featured-ind-card span {
+    min-width: 66px;
+    display: inline-block;
+    text-align: center;
+}
+.featured-ind-card img {
+    margin-right: 26px;
+    height: auto;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+    margin-left: 35%;
+}
+.featured-ind-card a {
+    font-size: 23px;
+    font-weight: 500;
+    line-height: 1.35;
+    letter-spacing: 0.29px;
+    color: #000;
+    margin-left: 6%;
+}
+@media only screen and (max-width: 500px){
+    .bar_itmes{
+        padding: 8px;
+      
+    }
+    
+    .bar_itmes a{
+        font-size: 8px;
+       
+    
+    }
+    .section-title h2 {
+        font-size: 20px;
+       
+    }
+    .featured-ind-card {
+        margin-top: 5%;
+    }
+    .top_heading h1{
+        
+        margin-top: 12%;
+        
+    }
+   
+}
+@media only screen and (max-width: 910px){
+    .bar_itmes{
+        padding: 8px;
+      
+    }
+    
+    .bar_itmes a{
+        font-size: 8px;
+       
+    
+    }
 }
