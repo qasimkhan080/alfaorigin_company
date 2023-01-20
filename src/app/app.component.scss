@@ -1,6 +1,16 @@
 .navbar-nav li a {
   float: right;
 }
+.nav_style_main{
+  display: flex;
+ justify-content: space-between;
+ margin-left: 8%;
+ margin-right: 8%;
+}
+.nav_style{
+  justify-content: right;
+  //  margin-top: -15%;
+}
 
 /*--------------------------------------------------------------
 # Footer
