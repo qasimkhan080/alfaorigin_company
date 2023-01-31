@@ -1,5 +1,5 @@
 
-
+@import 'ngx-toastr/toastr';
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
@@ -1305,11 +1305,6 @@ section {
   font-weight: 600;
   transition: 0.3s;
 }
-
-/* .pricing .box .btn-buy:hover {
-  background: #3498db;
-  color: #fff;
-} */
 
 .pricing .recommended {
   border-color: #3498db !important;
