@@ -14,13 +14,13 @@
             
               <div class="collapse navbar-collapse" id="navbarSupportedContent" >
                 <ul class="navbar-nav" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
-                  <li class="nav-item active">
-                    <a class="nav-link " routerLink="/home">Home </a>
+                  <li (click)="onClick(1)"   [ngClass]="{'active': tab===1}" class="nav-item ">
+                    <a  class="nav-link " routerLink="/home">Home </a>
                   </li>
-                  <li><a class="nav-link " routerLink="/services">Services</a></li>
-                  <li><a  class="nav-link scrollto" routerLink="/whyUs">Why Us</a></li>
-                  <li><a  class="nav-link scrollto " routerLink="/quickinquiry" fragment="contact" [state]="{id:1}">Contact</a></li>
-                  <li><a  class="getstarted mt-1 " routerLink="/quickinquiry" fragment="feedback"  [state]="{id:3}" >QUICK INQUIRY</a></li>
+                  <li (click)="onClick(2)"   [ngClass]="{'active': tab===2}"><a class="nav-link" routerLink="/services">Services</a></li>
+                  <li (click)="onClick(3)"   [ngClass]="{'active': tab===3}"><a  class="nav-link scrollto" routerLink="/whyUs">Why Us</a></li>
+                  <li (click)="onClick(4)"   [ngClass]="{'active': tab===4}"><a  class="nav-link scrollto " routerLink="/quickinquiry" fragment="contact" [state]="{id:1}">Contact</a></li>
+                  <li (click)="onClick(5)"   [ngClass]="{'active': tab===5}"><a  class="getstarted mt-1 " routerLink="/quickinquiry" fragment="contact"  [state]="{id:1}" >QUICK INQUIRY</a></li>
                 </ul>
               </div>
             </nav>
@@ -51,19 +51,19 @@
           <h4>Useful Links</h4>
           <ul>
             <li><i class="bx bx-chevron-right"></i> <a href="#hero">Home</a></li>
-            <li><i class="bx bx-chevron-right"></i> <a routerLink="/services">Services</a></li>
-            <li><i class="bx bx-chevron-right"></i> <a routerLink="/whyUs">Why Us</a></li>
-            <li><i class="bx bx-chevron-right"></i> <a routerLink="/quickinquiry" [state]="{id:1}">Contact</a></li>
+            <li (click)="onClick(2)"   [ngClass]="{'active': tab===2}"><i class="bx bx-chevron-right"></i> <a routerLink="/services">Services</a></li>
+            <li (click)="onClick(3)"   [ngClass]="{'active': tab===3}"><i class="bx bx-chevron-right"></i> <a routerLink="/whyUs">Why Us</a></li>
+            <li (click)="onClick(4)"   [ngClass]="{'active': tab===4}"><i class="bx bx-chevron-right"></i> <a routerLink="/quickinquiry" [state]="{id:1}">Contact</a></li>
           </ul>
         </div>
 
         <div class="col-lg-3 col-md-6 footer-links">
           <h4>Our Services</h4>
           <ul>
-            <li><i class="bx bx-chevron-right"></i> <a routerLink="/services" >Web Development</a></li>
-            <li><i class="bx bx-chevron-right"></i> <a routerLink="/services">Mobile App Development</a></li>
-            <li><i class="bx bx-chevron-right"></i> <a routerLink="/services">Software Testing</a></li>
-            <li><i class="bx bx-chevron-right"></i> <a routerLink="/services">Digital Marketing</a></li>
+            <li  (click)="onClick(2)"   [ngClass]="{'active': tab===2}" ><i class="bx bx-chevron-right"></i> <a routerLink="/services">Web Development</a></li>
+            <li (click)="onClick(2)"   [ngClass]="{'active': tab===2}"><i class="bx bx-chevron-right"></i> <a routerLink="/services">Mobile App Development</a></li>
+            <li (click)="onClick(2)"   [ngClass]="{'active': tab===2}"><i class="bx bx-chevron-right"></i> <a routerLink="/services">Software Testing</a></li>
+            <li (click)="onClick(2)"   [ngClass]="{'active': tab===2}"><i class="bx bx-chevron-right"></i> <a routerLink="/services">Digital Marketing</a></li>
             
           </ul>
         </div>
@@ -71,10 +71,10 @@
         <div class="col-lg-4 col-md-6 footer-newsletter footer-links">
           <h4 class="mt-3"></h4>
           <ul>
-            <li><i class="bx bx-chevron-right"></i> <a routerLink="/services">UX/UI Design and Ideation</a></li>
-            <li><i class="bx bx-chevron-right"></i> <a routerLink="/services">24/7 Support</a></li>
-            <li><i class="bx bx-chevron-right"></i> <a routerLink="/services">Branding</a></li>
-            <li><i class="bx bx-chevron-right"></i> <a routerLink="/services">Consultancy</a></li>
+            <li (click)="onClick(2)"   [ngClass]="{'active': tab===2}"><i class="bx bx-chevron-right"></i> <a routerLink="/services">UX/UI Design and Ideation</a></li>
+            <li (click)="onClick(2)"   [ngClass]="{'active': tab===2}"><i class="bx bx-chevron-right"></i> <a routerLink="/services">24/7 Support</a></li>
+            <li (click)="onClick(2)"   [ngClass]="{'active': tab===2}"><i class="bx bx-chevron-right"></i> <a routerLink="/services">Branding</a></li>
+            <li (click)="onClick(2)"   [ngClass]="{'active': tab===2}"><i class="bx bx-chevron-right"></i> <a routerLink="/services">Consultancy</a></li>
           </ul>
           <!-- <h4>Join Our Newsletter</h4>
           <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>

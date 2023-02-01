@@ -8,6 +8,9 @@ import { ActivatedRoute } from '@angular/router';
 })
 export class AppComponent {
   title = 'myapp';
+  tab : number = 1;
+ 
+  // Clicked : boolean
   constructor(private activatedRoute:ActivatedRoute){}
   ngOnInit():void{
     this.activatedRoute.fragment.subscribe(res=>{
@@ -28,4 +31,8 @@ export class AppComponent {
   setTimeout(() =>{
   document.getElementById(section)?.scrollIntoView({behavior:"smooth"});},1000);
    }
+   onClick(check:number){
+    //    console.log(check);
+       this.tab=check  
+}
 }
