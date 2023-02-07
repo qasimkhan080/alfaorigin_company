@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 import { ApiService } from '../apiServices/api.service';
+import { ToastrService } from 'ngx-toastr';
 
 @Component({
   selector: 'app-quick-inquiry',
@@ -14,13 +15,13 @@ requestQuoteForm: FormGroup | any;
 feedbackForm: FormGroup | any;
 submitted = false;
 step: number = 1;
-  constructor(private apiService: ApiService, private fb: FormBuilder, private router: Router) { 
+  constructor(private apiService: ApiService, private fb: FormBuilder, private router: Router ,private toastr: ToastrService) { 
     this.step = this.router.getCurrentNavigation()?.extras?.state?.id?this.router.getCurrentNavigation()?.extras?.state?.id:this.step;
   }
 
   ngOnInit(): void {
     this.contactForm = this.fb.group({
-      name:['', Validators.required],
+      name:[null, [Validators.required]],
       phone:[null, [Validators.required]],
       email:[null, [Validators.required, Validators.email]],
       message:[null, [Validators.required]]
@@ -44,64 +45,54 @@ step: number = 1;
       feedback:[null, [Validators.required]],
     })
   }
-  get g() { return this.contactForm.controls
+     get cf() {
+       return this.contactForm.controls
      }
-     get f() { return this.requestQuoteForm.controls
+     get rf() { return this.requestQuoteForm.controls
      }
-     get h() { return this.feedbackForm.controls
+     get ff() { return this.feedbackForm.controls
      }
   changeStep(step:number){
     this.step = step;
   }
   submitContactForm(){
-    this.submitted = true;
     if (this.contactForm.invalid) {
       return;
   }
-  // alert('SUCCESS!! :-)\n\n' + JSON.stringify(this.contactForm.value, null, 4)
-  // );
-
-
     this.apiService.postContact(this.contactForm['value']).subscribe((data:any)=>{
       if(data['status']==true){
-        alert(data['message']);
+        this.toastr.success(data['message']);
         this.contactForm.reset();
       }else{
-        alert(data['message']);
+        this.toastr.error(data['message']);
       }
     })
   }
 
   submitRequestQuoteForm(){
-    this.submitted = true;
     if (this.requestQuoteForm.invalid) {
       return;
   }
-  // alert('SUCCESS!! :-)\n\n' + JSON.stringify(this.requestQuoteForm.value, null, 4)
-  // );
     this.apiService.postRequestQuote(this.requestQuoteForm['value']).subscribe((data:any)=>{
       if(data['status']==true){
-        alert("Request Quote data saved successfully");
+        this.toastr.success(data['message']);
         this.requestQuoteForm.reset();
       }else{
-        alert(data['message']);
+        this.toastr.error(data['message']);
       }
     })
   }
 
   submitfeedbackForm(){
-    this.submitted = true;
     if (this.feedbackForm.invalid) {
       return;
   }
-  //   alert('SUCCESS!! :-)\n\n' + JSON.stringify(this.feedbackForm.value, null, 4)
-  // );
     this.apiService.postFeedback(this.feedbackForm['value']).subscribe((data:any)=>{
       if(data['status']==true){
-        alert("Feedback data saved successfully");
+        this.toastr.success(data['message']);
         this.feedbackForm.reset();
       }else{
-        alert(data['message']);
+        this.toastr.error(data['message']);
       }
     }) 
   }

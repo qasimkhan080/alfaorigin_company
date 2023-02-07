@@ -5,7 +5,7 @@ import { HttpClient } from '@angular/common/http';
   providedIn: 'root'
 })
 export class ApiService {
-private baseUrl = 'http://localhost:3000/';
+private baseUrl = 'https://api.alfaorigin.com/';
 
   constructor(private http: HttpClient) { }
 
