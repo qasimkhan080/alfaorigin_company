@@ -1,118 +1,144 @@
-.form_mrg{
-    margin-top: 5%;
+.form_mrg {
+  margin-top: 5%;
 }
 .container {
-    font-size: 13px;
-    color: #333;
-    line-height: 2;
-    margin-left: 5%;
+  font-size: 13px;
+  color: #333;
+  line-height: 2;
+  margin-left: 5%;
 }
 .contact_tab {
-    width: 100%;
-    height: 47px;
-    border-bottom: 1px solid #ddd;
-    margin-bottom: 5%;
-    margin-top: 6%;
-
+  width: 100%;
+  height: 47px;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 5%;
+  margin-top: 6%;
 }
 .contact_tab ul {
-    width: 100%;
-    display: block;
+  width: 100%;
+  display: block;
 }
 .contact_tab ul li {
-    list-style: none;
-    margin-right: 2px;
-    float: left;
-    text-transform: uppercase;
+  list-style: none;
+  margin-right: 2px;
+  float: left;
+  text-transform: uppercase;
 }
-.contact_tab ul li, .contact_tab ul li a {
-    font-size: 14px;
-    font-weight: 700;
-    color: #333;
-    cursor: pointer;
+.contact_tab ul li,
+.contact_tab ul li a {
+  font-size: 14px;
+  font-weight: 700;
+  color: #333;
+  cursor: pointer;
 }
-.contact_tab ul li a.active, .contact_tab ul li a:hover {
-    color: #333;
-    font-size: 14px;
-    font-weight: 700;
-    display: block;
-    text-decoration: none;
-    border-bottom: 3px solid #3498db;
+.contact_tab ul li a.active,
+.contact_tab ul li a:hover {
+  color: #333;
+  font-size: 14px;
+  font-weight: 700;
+  display: block;
+  text-decoration: none;
+  border-bottom: 3px solid #3498db;
 }
 .contact_tab ul li a {
-    padding: 0 30px 15px;
-    display: block;
-    text-decoration: none;
-    border-bottom: 3px solid transparent;
+  padding: 0 30px 15px;
+  display: block;
+  text-decoration: none;
+  border-bottom: 3px solid transparent;
 }
-.contact_tab ul li button:focus{
-    border-bottom: 3px solid #3498db;
+.contact_tab ul li button:focus {
+  border-bottom: 3px solid #3498db;
+}
+.contact_tab ul li,
+.contact_tab ul li a {
+  font-size: 14px;
+  font-weight: 700;
+  color: #333;
+}
+.btn_send {
+  border: none;
+  border-radius: 35px;
+  width: 25%;
+  color: #fff;
+  background: #3498db;
+  text-align: center;
+  padding: 15px;
+  font-weight: 600;
+}
+.bg-shadow {
+  box-shadow: 0px 2px 25px rgba(0, 0, 0, 0.1);
+}
 
+.activeSubMenu {
+  color: #333;
+  font-size: 14px;
+  font-weight: 700;
+  display: block;
+  text-decoration: none;
+  border-bottom: 3px solid #3498db !important;
 }
-.contact_tab ul li, .contact_tab ul li a {
-    font-size: 14px;
-    font-weight: 700;
-    color: #333;
+.map {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 8%;
 }
-.btn_send{
-    border: none;
-    border-radius: 35px;
-    width: 25%;
-    color: #fff;
-    background: #3498db;
+
+@-webkit-keyframes animate-loading {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes animate-loading {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@media screen and (max-width: 1024px) {
+  .btn_send {
+    width: 40%;
+  }
+}
+@media screen and (max-width: 992px) {
+  .btn_send {
+    width: 40%;
+  }
+  .contact_tab ul {
+    padding: 0;
+  }
+}
+@media screen and (max-width: 767px) {
+  .map {
+    margin-left: 4%;
+  }
+  .btn_send {
+    width: 40%;
+  }
+}
+@media screen and (max-width: 495px) {
+  .contact_tab ul li,
+  .contact_tab ul li a {
+    padding: 8px;
+    align-items: center;
     text-align: center;
-    padding: 15px;
-    font-weight: 600;
-}  
-  .bg-shadow{
-    box-shadow: 0px 2px 25px rgba(0, 0, 0, 0.1);
   }
-  
-  .activeSubMenu{
-    color: #333;
-    font-size: 14px;
-    font-weight: 700;
-    display: block;
-    text-decoration: none;
-    border-bottom: 3px solid #3498db !important;
+  .contact_tab {
+    padding: 0;
   }
-  .mapp{
-    width:100%;
-     height:350px;
+  .contact_tab ul {
+    padding: 0;
   }
-  
-  @-webkit-keyframes animate-loading {
-    0% {
-      transform: rotate(0deg);
-    }
-  
-    100% {
-      transform: rotate(360deg);
-    }
+  .btn_send {
+    width: 70%;
   }
-  
-  @keyframes animate-loading {
-    0% {
-      transform: rotate(0deg);
-    }
-  
-    100% {
-      transform: rotate(360deg);
-    }
-  }
-  @media screen and (max-width: 495px) {
-    .contact_tab ul li, .contact_tab ul li a {
-        padding: 8px;
-        align-items: center;
-        text-align: center;
-    }
-    .contact_tab{
-        padding: 0;
-    }
-    .contact_tab ul{
-        padding: 0;
-    }
-    .btn_send{
-        width: 70%;
-    }
-  }
+}

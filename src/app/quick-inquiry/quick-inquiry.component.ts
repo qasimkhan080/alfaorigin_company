@@ -28,10 +28,10 @@ step: number = 1;
     })
     this.requestQuoteForm = this.fb.group({
       name:[null, [Validators.required]],
-      service:[null, [Validators.required]],
+      service:["select", [Validators.required]],
       organization:[null, [Validators.required]],
       email:[null, [Validators.required, Validators.email]],
-      budget:[null, [Validators.required]],
+      budget:["budget", [Validators.required]],
       techInfo:[null, [Validators.required]]
     })
     this.feedbackForm = this.fb.group({
