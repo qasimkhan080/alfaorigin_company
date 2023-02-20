@@ -37,7 +37,9 @@
               "src/styles.scss",
               "node_modules/ngx-toastr/toastr.css"
             ],
-            "scripts": []
+            "scripts": [
+              "./node_modules/@lottiefiles/lottie-player/dist/lottie-player.js"
+            ]
           },
           "configurations": {
             "production": {

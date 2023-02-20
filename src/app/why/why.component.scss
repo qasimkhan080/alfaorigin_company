@@ -7,7 +7,15 @@
   background: #fff;
   padding: 60px 0;
 }
-
+.background img{
+  // background-color: #3498db;
+  height: auto;
+  width: 50%;
+//  
+}
+.animated {
+  animation: up-down 2s ease-in-out infinite alternate-reverse both;
+}
 #about .about-container .background {
   margin: 20px 0;
 }
@@ -33,7 +41,7 @@
 #about .about-container .icon-box {
   background: #fff;
   background-size: cover;
-  padding: 0 0 30px 0;
+  padding: 0 0 10% 0;
 }
 
 #about .about-container .icon-box .icon {

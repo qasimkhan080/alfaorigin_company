@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { NgModule , CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule } from '@angular/router';
@@ -14,6 +14,7 @@ import { WhyComponent } from './why/why.component';
 import { ToastrModule } from 'ngx-toastr';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 @NgModule({
+  schemas: [ CUSTOM_ELEMENTS_SCHEMA ],
   declarations: [
     AppComponent,
     HomeComponent,

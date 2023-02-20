@@ -7,6 +7,17 @@
   line-height: 2;
   margin-left: 5%;
 }
+.mapp img{
+  width: 88%;
+  height: 80%;
+}
+.animated {
+  animation: up-down 2s ease-in-out infinite alternate-reverse both;
+}
+iframe{
+  width: 100%;
+  height: 100%;
+}
 .contact_tab {
   width: 100%;
   height: 47px;
@@ -82,7 +93,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 8%;
+  margin-top: 5%;
 }
 
 @-webkit-keyframes animate-loading {
@@ -124,6 +135,7 @@
   .btn_send {
     width: 40%;
   }
+  
 }
 @media screen and (max-width: 495px) {
   .contact_tab ul li,
