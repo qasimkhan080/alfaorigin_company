@@ -9,7 +9,8 @@
               <ul>
                 <li>
                   <a
-                    (click)="changeStep(1)"[ngClass]="[step == 1 ? 'activeSubMenu' : '']"
+                    (click)="changeStep(1)"
+                    [ngClass]="[step == 1 ? 'activeSubMenu' : '']"
                     routerLink="/quickinquiry"
                     fragment="contact"
                     >Contact</a
@@ -44,8 +45,7 @@
               class="container bg-shadow"
               data-aos="fade-up"
             >
-              <div class="section-header">
-              </div>
+              <div class="section-header"></div>
 
               <div class="row gx-lg-0 gy-4 mt-2">
                 <div class="col-lg-12">
@@ -121,8 +121,7 @@
               class="container bg-shadow"
               data-aos="fade-up"
             >
-              <div class="section-header">
-              </div>
+              <div class="section-header"></div>
 
               <div class="row gx-lg-0 gy-4 mt-2">
                 <div class="col-lg-12">
@@ -277,8 +276,7 @@
               class="container bg-shadow"
               data-aos="fade-up"
             >
-              <div class="section-header">
-              </div>
+              <div class="section-header"></div>
 
               <div class="row gx-lg-0 gy-4 mt-2">
                 <div class="col-lg-12">
@@ -407,20 +405,24 @@
           </div>
         </div>
         <div class="col-lg-6 col-md-12 col-sm-12 col-xm-4 map mapp">
-          <img class="animated" src="../../assets/img/contact/Contact Us.svg " alt="">
+          <img
+            loading="lazy"
+            class="animated"
+            src="assets/img/contact/Contact Us.svg "
+            alt=""
+          />
         </div>
       </div>
     </div>
   </div>
   <div class="w-100 d-flex justify-content-center mt-5">
     <iframe
-    class="w-75  "
+      class="w-75"
       src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3321.6493505241006!2d73.0663574!3d33.640332799999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38df955bd6c68671%3A0xf1be5ab5c36c09b1!2sAlfaOrigin!5e0!3m2!1sen!2s!4v1675968009790!5m2!1sen!2s"
       style="border: 0"
       allowfullscreen=""
       loading="lazy"
       referrerpolicy="no-referrer-when-downgrade"
     ></iframe>
-  
   </div>
 </section>

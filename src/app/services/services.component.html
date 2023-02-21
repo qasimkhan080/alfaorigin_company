@@ -1,13 +1,13 @@
 <p class="mmm">services works!</p>
-
 <section>
   <div class="hello">
     <div class="row" data-aos="fade-up" data-aos-delay="100">
       <div class="col-md-12 top_heading">
         <h1>Software Development</h1>
         <img
+          loading="lazy"
           class="background"
-          src="../../assets/img/services/Services.svg"
+          src="assets/img/services/Services.svg"
           alt="Aleq"
         />
         <p>
@@ -16,71 +16,9 @@
       </div>
     </div>
   </div>
-  <!-- ======= Clients Section ======= -->
-  <section id="clients" class="clients section-bg">
-    <div class="container">
-      <div class="row" data-aos="zoom-in">
-        <div
-          class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center"
-        >
-          <img
-            src="../../assets/img/services/client/docker.svg"
-            class="img-fluid"
-            alt=""
-          />
-        </div>
 
-        <div
-          class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center"
-        >
-          <img
-            src="../../assets/img/services/client/PayPal-White.svg"
-            class="img-fluid"
-            alt=""
-          />
-        </div>
-
-        <div
-          class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center"
-        >
-          <img
-            src="../../assets/img/services/client/uber.svg"
-            class="img-fluid"
-            alt=""
-          />
-        </div>
-
-        <div
-          class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center"
-        >
-          <img
-            src="../../assets/img/services/client/CNX.svg"
-            class="img-fluid"
-            alt=""
-          />
-        </div>
-
-        <div
-          class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center"
-        >
-          <img
-            src="../../assets/img/services/client/JohnsonandJohnsonLogo.svg"
-            class="img-fluid"
-            alt=""
-          />
-        </div>
-
-        <div
-          class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center"
-        >
-          <img src="assets/img/clients/client-6.png" class="img-fluid" alt="" />
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- End Cliens Section -->
   <section class="pricing">
-    <div class="container">
+    <div class="">
       <div class="section-title">
         <h2>Off-the-shelf Software Solutions for Your Business</h2>
         <p id="ourservices">
@@ -98,341 +36,174 @@
     </div>
   </section>
 
-  <!-- our services -->
-  <section class="bg-light" data-aos="fade-up" data-aos-delay="200">
-    <div class="row d-flex">
-      <div class="col-md-6 text-center">
-        <div class="section-title">
-          <h2 class="mb-5 mt-4">Our Services</h2>
+<!-- new services -->
+<section class="section-title">
+<div class="main">
+  <div class="section-title">
+    <h2 class="text-center">OUR SERVICES</h2>
+  </div>
+  <div class="services_bar">
+<!-- left -->
+    <div class="service_bar_s">
+      <div class="row service_left">
+        <div class="bar_img col-xl-3 col-lg-4 col-md-12">
+          <img
+            src="assets/img/loti/UI UX 1.svg"
+            alt="logo"
+          />
         </div>
-        <div>
-          <div>
-            <button
-              class="ms-2 service_btn me-2"
-              [ngClass]="[isclicked == 1 ? 'service_btn-active' : '']"
-              (click)="isClicked(1)"
-            >
-              Web Development
-            </button>
-            <button
-              class="ms-2 service_btn"
-              [ngClass]="[isclicked == 2 ? 'service_btn-active' : '']"
-              (click)="isClicked(2)"
-            >
-              Mobile App Development
-            </button>
-          </div>
-          <div>
-            <button
-              class="ms-2 service_btn me-2"
-              [ngClass]="[isclicked == 3 ? 'service_btn-active' : '']"
-              (click)="isClicked(3)"
-            >
-              Software Testing
-            </button>
-            <button
-              class="ms-2 service_btn"
-              [ngClass]="[isclicked == 4 ? 'service_btn-active' : '']"
-              (click)="isClicked(4)"
-            >
-              Digital Marketing
-            </button>
-          </div>
-          <div>
-            <button
-              class="ms-2 service_btn me-2"
-              [ngClass]="[isclicked == 5 ? 'service_btn-active' : '']"
-              (click)="isClicked(5)"
-            >
-              UX/UI Design and Ideation
-            </button>
-            <button
-              class="ms-2 service_btn"
-              [ngClass]="[isclicked == 6 ? 'service_btn-active' : '']"
-              (click)="isClicked(6)"
-            >
-              24/7 Support
-            </button>
-          </div>
-          <div>
-            <button
-              class="ms-2 service_btn me-2"
-              [ngClass]="[isclicked == 7 ? 'service_btn-active' : '']"
-              (click)="isClicked(7)"
-            >
-              Branding
-            </button>
-            <button
-              class="ms-2 service_btn"
-              [ngClass]="[isclicked == 8 ? 'service_btn-active' : '']"
-              (click)="isClicked(8)"
-            >
-              Consultancy
-            </button>
-          </div>
+        <div class="col-xl-7 col-lg-6 col-md-12 content_div">
+          <h4 class="text-start">Web Development</h4>
+          <p>
+            Our consultants categorise and rank business objectives, examine current resources and infrastructure, and develop a roadmap for software delivery and monitoring services. We collaborate with our clients to plan and develop software that is tailored to their unique needs and offers real, long-term value as a trusted digital partner.
+          </p>
         </div>
-      </div>
-      <div class="col-md-6">
-        <div class="card">
-          <div
-            *ngIf="isclicked == 1"
-            class="card_body"
-            data-aos="fade-left"
-            data-aos-delay="30"
-          >
-            <img
-              src="https://10pearls.com/wp-content/uploads/2022/12/consutling-icon-wh.svg"
-              width="48"
-              height="61"
-              alt="logo"
-            />
-            <h6 class="mt-4">Web Development</h6>
-            <p class="mt-4">
-              Our consultants categorise and rank business objectives, examine
-              current resources and infrastructure, and develop a roadmap for
-              software delivery and monitoring services. We collaborate with our
-              clients to plan and develop software that is tailored to their
-              unique needs and offers real, long-term value as a trusted digital
-              partner.
-            </p>
-          </div>
-          <div
-            *ngIf="isclicked == 2"
-            class="card_body"
-            data-aos="fade-left"
-            data-aos-delay="30"
-          >
-            <img
-              src="https://10pearls.com/wp-content/uploads/2022/12/full-stack-wh.svg"
-              width="48"
-              height="61"
-              alt="logo"
-            />
-            <h6 class="mt-4">Mobile App Development</h6>
-            <p class="mt-4">
-              Our solid technical skills and broad involvement with full-stack
-              advancement permit us to convey upgraded, versatile and secure
-              solutions and applications. We are skilled in Front-End
-              development, Middleware Reconciliation, Back-End development,
-              DevOps, and guarantee that each release we discharge is of
-              first-rate quality.
-            </p>
-          </div>
-          <div
-            *ngIf="isclicked == 3"
-            class="card_body"
-            data-aos="fade-left"
-            data-aos-delay="30"
-          >
-            <img
-              src="https://10pearls.com/wp-content/uploads/2022/09/10pdigIcons-04.svg"
-              width="48"
-              height="61"
-              alt="logo"
-            />
-            <h6 class="mt-4">Software Testing</h6>
-            <p class="mt-4">
-              Our international team of consultants, engineers, and designers
-              creates successful Minimum Viable Products (MVPs) to quickly
-              launch and evaluate prototypes and accelerate the introduction of
-              new products to the market. Our unique Lean Product Accelerator
-              (Trade Mark) methodology, based on agile mindset and design
-              thinking, is a surefire solution to guarantee quick and
-              intelligent software product creation.
-            </p>
-          </div>
-          <div
-            *ngIf="isclicked == 4"
-            class="card_body"
-            data-aos="fade-left"
-            data-aos-delay="30"
-          >
-            <img
-              src="https://10pearls.com/wp-content/uploads/2022/11/Vector-1.svg"
-              width="48"
-              height="61"
-              alt="logo"
-            />
-            <h6 class="mt-4">Digital Marketing</h6>
-            <p class="mt-4">
-              We provide a wide range of services as a top mobile app
-              development company to meet all of your mobility needs. Our strong
-              and adaptable frameworks are reliable, and expedite time to
-              market, regardless of whether a product is based on native app
-              development, hybrid development, mobile games, wearable
-              technology, blockchain, or AI-ML.
-            </p>
-          </div>
-          <div
-            *ngIf="isclicked == 5"
-            class="card_body"
-            data-aos="fade-left"
-            data-aos-delay="30"
-          >
-            <img
-              src="https://10pearls.com/wp-content/uploads/2022/12/application-modernization-wh.svg"
-              width="48"
-              height="61"
-              alt="logo"
-            />
-            <h6 class="mt-4">UX/UI Design and Ideation</h6>
-            <p class="mt-4">
-              By analysing each company's particular business and technological
-              requirements, we help firms modernise by offering data-driven,
-              practical insights and solutions. We assist companies in
-              rethinking their tech environment and maximising their return on
-              investment, whether it be by rehosting, restructuring,
-              rearchitecting, rebuilding, or a mix of these.
-            </p>
-          </div>
-          <div
-            *ngIf="isclicked == 6"
-            class="card_body"
-            data-aos="fade-left"
-            data-aos-delay="30"
-          >
-            <img
-              src="https://10pearls.com/wp-content/uploads/2022/12/api-development-wh.svg"
-              width="48"
-              height="61"
-              alt="logo"
-            />
-            <h6 class="mt-4">24/7 Support</h6>
-            <p class="mt-4">
-              To smoothly integrate custom software with internal and external
-              company systems and services, we use agile, API-driven
-              development. This maximises uptime, scalability, and flexibility.
-              Using this strategy, we guarantee to increase automation across
-              the entire organization and enable integration with a number of
-              software systems and subsystems.
-            </p>
-          </div>
-          <div
-            *ngIf="isclicked == 7"
-            class="card_body"
-            data-aos="fade-left"
-            data-aos-delay="30"
-          >
-            <img
-              src="https://10pearls.com/wp-content/uploads/2022/11/cloud-migration-icon-white-2.svg"
-              width="48"
-              height="61"
-              alt="logo"
-            />
-            <h6 class="mt-4">Branding</h6>
-            <p class="mt-4">
-              Our highly qualified and experienced cloud specialists offer
-              end-to-end services that address all facets of implementing cloud
-              applications, from cloud application consulting to cloud
-              application development and testing, cloud application security
-              services, cloud application integration with other cloud and
-              on-premises apps, and cloud infrastructure management.
-            </p>
-          </div>
-          <div
-            *ngIf="isclicked == 8"
-            class="card_body"
-            data-aos="fade-left"
-            data-aos-delay="30"
-          >
-            <img
-              src="https://10pearls.com/wp-content/uploads/2022/09/10pdigIcons-02.svg"
-              width="48"
-              height="61"
-              alt="logo"
-            />
-            <h6 class="mt-4">Consultancy</h6>
-            <p class="mt-4">
-              Our devoted UX/UI teams have years of experience in animation
-              design, interface architecture, root cause analysis, thorough
-              post-analysis, and many other areas. We incorporate a
-              design-thinking approach and ensure that UX and technical
-              requirements go hand in hand, with no trade-off of one at the
-              expense of the other.
-            </p>
-          </div>
-        </div>
-
-      </div>
-      <div class="text-end p-0 me-5">
-        <button
-          class="btn btn_read_more me-5"
-          routerLink="/quickinquiry"
-          [state]="{ id: 1 }"
-        >
-          Free Technical Consultation
-          <span
-            ><img
-              width="20"
-              src="../../assets/img/arrow-right-5-circle-svgrepo-com.svg"
-              alt=""
-          /></span>
-        </button>
       </div>
     </div>
-  </section>
+<!-- right -->
+    <div class="service_bar_r">
+      <div class="row service_left">
+        
+        <div class="col-xl-8 col-lg-6 col-md-12 content_div_r">
+          <h4 class="mob">Mobile App Development</h4>
+          <p>
+            Our solid technical skills and broad involvement with full-stack advancement permit us to convey upgraded, versatile and secure solutions and applications. We are skilled in Front-End development, Middleware Reconciliation, Back-End development, DevOps, and guarantee that each release we discharge is of first-rate quality.
+          </p>
+        </div>
+        <div class="bar_img_r col-xl-4 col-lg-6 col-md-12">
+          <img
+            src="assets/img/loti/UI UX 1.svg"
+            alt="logo"
+          />
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <div class="services_bar">
+    <!-- left -->
+        <div class="service_bar_s">
+          <div class="row service_left">
+            <div class="bar_img col-xl-3 col-lg-4 col-md-12">
+              <img
+                src="assets/img/loti/UI UX 1.svg"
+                alt="logo"
+              />
+            </div>
+            <div class="col-xl-7 col-lg-6 col-md-12 content_div">
+              <h4 class="text-start">Software Testing</h4>
+              <p>
+                Our international team of consultants, engineers, and designers creates successful Minimum Viable Products (MVPs) to quickly launch and evaluate prototypes and accelerate the introduction of new products to the market. Our unique Lean Product Accelerator (Trade Mark) methodology, based on agile mindset and design thinking, is a surefire solution to guarantee quick and intelligent software product creation.
+              </p>
+            </div>
+          </div>
+        </div>
+    <!-- right -->
+        <div class="service_bar_r">
+          <div class="row service_left">
+            
+            <div class="col-xl-8 col-lg-6 col-md-12 content_div_r">
+              <h4 class="degi">Digital Marketing</h4>
+              <p>
+                We provide a wide range of services as a top mobile app development company to meet all of your mobility needs. Our strong and adaptable frameworks are reliable, and expedite time to market, regardless of whether a product is based on native app development, hybrid development, mobile games, wearable technology, blockchain, or AI-ML.
+              </p>
+            </div>
+            <div class="bar_img_r col-xl-4 col-lg-6 col-md-12">
+              <img
+                src="assets/img/loti/UI UX 1.svg"
+                alt="logo"
+              />
+            </div>
+          </div>
+        </div>
+    
+  </div>
+  <div class="services_bar">
+        <!-- left -->
+            <div class="service_bar_s">
+              <div class="row service_left">
+                <div class="bar_img col-xl-3 col-lg-4 col-md-12">
+                  <img
+                    src="assets/img/loti/UI UX 1.svg"
+                    alt="logo"
+                  />
+                </div>
+                <div class="col-xl-7 col-lg-6 col-md-12 content_div">
+                  <h4 class="text-start">UX/UI Design and Ideation</h4>
+                  <p>
+                    By analysing each company's particular business and technological requirements, we help firms modernise by offering data-driven, practical insights and solutions. We assist companies in rethinking their tech environment and maximising their return on investment, whether it be by rehosting, restructuring, rearchitecting, rebuilding, or a mix of these.
+                  </p>
+                </div>
+              </div>
+            </div>
+        <!-- right -->
+            <div class="service_bar_r">
+              <div class="row service_left">
+                
+                <div class="col-xl-8 col-lg-6 col-md-12 content_div_r">
+                  <h4 class="sup">24/7 Support</h4>
+                  <p>
+                    To smoothly integrate custom software with internal and external company systems and services, we use agile, API-driven development. This maximises uptime, scalability, and flexibility. Using this strategy, we guarantee to increase automation across the entire organization and enable integration with a number of software systems and subsystems.
+                  </p>
+                </div>
+                <div class="bar_img_r col-xl-4 col-lg-6 col-md-12">
+                  <img
+                    src="assets/img/loti/UI UX 1.svg"
+                    alt="logo"
+                  />
+                </div>
+              </div>
+            </div>
+        
+   </div>
+   <div class="services_bar">
+      <!-- left -->
+          <div class="service_bar_s">
+            <div class="row service_left">
+              <div class="bar_img col-xl-3 col-lg-4 col-md-12">
+                <img
+                  src="assets/img/loti/UI UX 1.svg"
+                  alt="logo"
+                />
+              </div>
+              <div class="col-xl-7 col-lg-6 col-md-12 content_div">
+                <h4 class="text-start">Branding</h4>
+                <p>
+                  Our highly qualified and experienced cloud specialists offer end-to-end services that address all facets of implementing cloud applications, from cloud application consulting to cloud application development and testing, cloud application security services, cloud application integration with other cloud and on-premises apps, and cloud infrastructure management.
+                </p>
+              </div>
+            </div>
+          </div>
+      <!-- right -->
+          <div class="service_bar_r">
+            <div class="row service_left">
+              
+              <div class="col-xl-8 col-lg-6 col-md-12 content_div_r">
+                <h4 class="cons">Consultancy</h4>
+                <p>
+                  Our devoted UX/UI teams have years of experience in animation design, interface architecture, root cause analysis, thorough post-analysis, and many other areas. We incorporate a design-thinking approach and ensure that UX and technical requirements go hand in hand, with no trade-off of one at the expense of the other.
+                </p>
+              </div>
+              <div class="bar_img_r col-xl-4 col-lg-6 col-md-12">
+                <img
+                  src="assets/img/loti/UI UX 1.svg"
+                  alt="logo"
+                />
+              </div>
+            </div>
+          </div>
+      
+   </div>
+</div>
+</section>
+
+
   <!-- operating system -->
   <section>
-    <!-- 1 -->
-    <div class="containers">
-      <div class="section-title">
-        <h2 class="text-center">Operating Models</h2>
-      </div>
-      <div class="row d-flex mt-5 align-items-center">
-        <div class="col-lg-6 col-md-12 content_div text-center">
-          <h4>Onshore Software Development</h4>
-          <p>
-            We specalize in providing onshore software development services to
-            businesses of all sizes. Our team of experienced developers from our
-            development centers in USA, UK, Latin America, and South Asia work
-            closely with clients to understand their specific needs and create
-            customized solutions that streamline processes and improve
-            efficiency. Our services include Technical Consulting, Full Stack
-            Development, New Product Development, Mobile App Development, Legacy
-            & Application, API Development & Integration, Cloud Development, and
-            UX/UI Design & Ideation. With our onshore development model, we
-            provide clients with direct communication and easy accessibility to
-            our team, ensuring that the projects are completed on time and
-            within budget.
-          </p>
-        </div>
-        <div class="col-lg-6 col-md-12 mt-5 text-center">
-          <img
-            class="operating_user"
-            src="https://10pearls.com/wp-content/uploads/2022/12/2imageOP.webp"
-            alt="logo"
-          />
-        </div>
-      </div>
-    </div>
-
-    <div class="containers bg-light">
-      <div class="row d-flex align-items-center">
-        <div class="col-lg-6 col-md-12 text-center" style="margin-top: 6%">
-          <img
-            class="operating_user"
-            src="https://10pearls.com/wp-content/uploads/2022/12/1imageOP.webp"
-            alt="logo"
-          />
-        </div>
-        <div class="col-lg-6 col-md-12 content_div text-center">
-          <h4>Nearshore Software Development</h4>
-          <p>
-            We also provide a development team to be available in the same time
-            zone but remote. We can provide you the access to highly experienced
-            resources who possess the same skills and workflow efficiencies as
-            onshore resources. These resources we provide are from our
-            development centers in Pakistan. This will help you get a better
-            value, geographical proximity, better time zone alignment, real-time
-            collaborative agile development cycle, and more.
-          </p>
-        </div>
-      </div>
-    </div>
     <!-- 2 -->
     <div class="containers">
       <div class="row d-flex mt-5 align-items-center">
-        <div class="col-lg-6 col-md-12 content_div text-center">
+        <div class="col-lg-12 col-md-12 content_div text-center">
           <h4>Offshore Software Development</h4>
           <p>
             We can help your business to get to the next level with cost
@@ -460,41 +231,16 @@
             </li>
           </p>
         </div>
-        <div class="col-lg-6 col-md-12 mt-5 text-center">
+        <!-- <div class="col-lg-6 col-md-12 mt-5 text-center">
           <img
             class="operating_user"
             src="https://10pearls.com/wp-content/uploads/2022/12/offshore-sd-img-1024x696.webp"
             alt="logo"
           />
-        </div>
+        </div> -->
       </div>
     </div>
 
-    <div class="containers bg-light">
-      <div class="row d-flex align-items-center">
-        <div class="col-lg-6 col-md-12 text-center" style="margin-top: 6%">
-          <img
-            class="operating_user"
-            src="https://10pearls.com/wp-content/uploads/2022/12/rightshore-sd-img-1024x696.webp"
-            alt="logo"
-          />
-        </div>
-        <div class="col-lg-6 col-md-12 content_div text-center">
-          <h4>Rightshore Software Development</h4>
-          <p>
-            When it comes to software development, there is no one-size-fits-all
-            approach that works for every organization. Each company must
-            analyze their unique needs and determine the best model for them. In
-            Rightshore Software Development, the project's origin or the
-            company's business center chooses a blended shore approach. This
-            approach involves keeping certain key processes, such as Project
-            Delivery, Architecture, and UX/UI, onshore or nearshore, while
-            outsourcing other roles, such as software development, quality
-            assurance, and DevOps, to an offshore location.
-          </p>
-        </div>
-      </div>
-    </div>
   </section>
   <!-- tools -->
   <section data-aos="fade-up" data-aos-delay="200">
@@ -536,7 +282,7 @@
                   <img
                     width="252"
                     height="168"
-                    src="../../assets/img/services/tools/adobe-aem-logo.webp"
+                    src="assets/img/services/tools/adobe-aem-logo.webp"
                     alt=""
                   />
                 </div>
@@ -546,7 +292,7 @@
                   <img
                     width="252"
                     height="168"
-                    src="../../assets/img/services/tools/Amazon_Web@3x.webp"
+                    src="assets/img/services/tools/Amazon_Web@3x.webp"
                     alt=""
                   />
                 </div>
@@ -556,7 +302,7 @@
                   <img
                     width="252"
                     height="168"
-                    src="../../assets/img/services/tools/android-studio-2.webp"
+                    src="assets/img/services/tools/android-studio-2.webp"
                     alt=""
                   />
                 </div>
@@ -566,7 +312,7 @@
                   <img
                     width="252"
                     height="168"
-                    src="../../assets/img/services/tools/angular-seeklogo-com.svg"
+                    src="assets/img/services/tools/angular-seeklogo-com.svg"
                     alt=""
                   />
                 </div>
@@ -576,7 +322,7 @@
                   <img
                     width="252"
                     height="168"
-                    src="../../assets/img/services/tools/Kotlin_logo-1.svg"
+                    src="assets/img/services/tools/Kotlin_logo-1.svg"
                     alt=""
                   />
                 </div>
@@ -586,7 +332,7 @@
                   <img
                     width="252"
                     height="168"
-                    src="../../assets/img/services/tools/microsoft-azure-logo.svg"
+                    src="assets/img/services/tools/microsoft-azure-logo.svg"
                     alt=""
                   />
                 </div>
@@ -596,7 +342,7 @@
                   <img
                     width="252"
                     height="168"
-                    src="../../assets/img/services/tools/ms-dynamics-logo2.webp"
+                    src="assets/img/services/tools/ms-dynamics-logo2.webp"
                     alt=""
                   />
                 </div>
@@ -606,7 +352,7 @@
                   <img
                     width="252"
                     height="168"
-                    src="../../assets/img/services/tools/reactjs-ar-21-copy.svg"
+                    src="assets/img/services/tools/reactjs-ar-21-copy.svg"
                     alt=""
                   />
                 </div>
@@ -616,7 +362,7 @@
                   <img
                     width="252"
                     height="168"
-                    src="../../assets/img/services/tools/Ruby_on_Rails-Logo.svg"
+                    src="assets/img/services/tools/Ruby_on_Rails-Logo.svg"
                     alt=""
                   />
                 </div>
@@ -626,7 +372,7 @@
                   <img
                     width="252"
                     height="168"
-                    src="../../assets/img/services/tools/sd-micrsoft.webp"
+                    src="assets/img/services/tools/sd-micrsoft.webp"
                     alt=""
                   />
                 </div>
@@ -636,7 +382,7 @@
                   <img
                     width="252"
                     height="168"
-                    src="../../assets/img/services/tools/sharepoint-1.svg"
+                    src="assets/img/services/tools/sharepoint-1.svg"
                     alt=""
                   />
                 </div>
@@ -651,7 +397,7 @@
                   <img
                     width="252"
                     height="168"
-                    src="../../assets/img/services/language/2048px-Unofficial_JavaScript_logo_2.svg-1.webp"
+                    src="assets/img/services/language/2048px-Unofficial_JavaScript_logo_2.svg-1.webp"
                     alt=""
                   />
                 </div>
@@ -661,7 +407,7 @@
                   <img
                     width="252"
                     height="168"
-                    src="../../assets/img/services/language/golang-logo-1.webp"
+                    src="assets/img/services/language/golang-logo-1.webp"
                     alt=""
                   />
                 </div>
@@ -671,7 +417,7 @@
                   <img
                     width="252"
                     height="168"
-                    src="../../assets/img/services/language/Group-726.webp"
+                    src="assets/img/services/language/Group-726.webp"
                     alt=""
                   />
                 </div>
@@ -681,7 +427,7 @@
                   <img
                     width="252"
                     height="168"
-                    src="../../assets/img/services/language/Java_programming_language_logo_3x.webp"
+                    src="assets/img/services/language/Java_programming_language_logo_3x.webp"
                     alt=""
                   />
                 </div>
@@ -691,7 +437,7 @@
                   <img
                     width="252"
                     height="168"
-                    src="../../assets/img/services/language/Microsoft_.NET_logo@3x.webp"
+                    src="assets/img/services/language/Microsoft_.NET_logo@3x.webp"
                     alt=""
                   />
                 </div>
@@ -701,7 +447,7 @@
                   <img
                     width="252"
                     height="168"
-                    src="../../assets/img/services/language/new-php-logo.svg"
+                    src="assets/img/services/language/new-php-logo.svg"
                     alt=""
                   />
                 </div>
@@ -711,7 +457,7 @@
                   <img
                     width="252"
                     height="168"
-                    src="../../assets/img/services/language/Nodejs_logo@3x.webp"
+                    src="assets/img/services/language/Nodejs_logo@3x.webp"
                     alt=""
                   />
                 </div>
@@ -721,7 +467,7 @@
                   <img
                     width="252"
                     height="168"
-                    src="../../assets/img/services/language/objectivec-icon.svg"
+                    src="assets/img/services/language/objectivec-icon.svg"
                     alt=""
                   />
                 </div>
@@ -731,7 +477,7 @@
                   <img
                     width="252"
                     height="168"
-                    src="../../assets/img/services/language/python-logo-generic.svg"
+                    src="assets/img/services/language/python-logo-generic.svg"
                     alt=""
                   />
                 </div>
@@ -741,7 +487,7 @@
                   <img
                     width="252"
                     height="168"
-                    src="../../assets/img/services/language/r-language-icon.svg"
+                    src="assets/img/services/language/r-language-icon.svg"
                     alt=""
                   />
                 </div>
@@ -751,7 +497,7 @@
                   <img
                     width="252"
                     height="168"
-                    src="../../assets/img/services/language/reactnative-logo.webp"
+                    src="assets/img/services/language/reactnative-logo.webp"
                     alt=""
                   />
                 </div>
@@ -761,7 +507,7 @@
                   <img
                     width="252"
                     height="168"
-                    src="../../assets/img/services/language/Swift_logo@3x.webp"
+                    src="assets/img/services/language/Swift_logo@3x.webp"
                     alt=""
                   />
                 </div>
@@ -776,7 +522,7 @@
                   <img
                     width="252"
                     height="168"
-                    src="../../assets/img/services/database/aws-dynamodb.svg"
+                    src="assets/img/services/database/aws-dynamodb.svg"
                     alt=""
                   />
                 </div>
@@ -786,7 +532,7 @@
                   <img
                     width="252"
                     height="168"
-                    src="../../assets/img/services/database/cassandra-logo-1.webp"
+                    src="assets/img/services/database/cassandra-logo-1.webp"
                     alt=""
                   />
                 </div>
@@ -796,7 +542,7 @@
                   <img
                     width="252"
                     height="168"
-                    src="../../assets/img/services/database/cognos-logo.webp"
+                    src="assets/img/services/database/cognos-logo.webp"
                     alt=""
                   />
                 </div>
@@ -806,7 +552,7 @@
                   <img
                     width="252"
                     height="168"
-                    src="../../assets/img/services/database/hadoop.svg"
+                    src="assets/img/services/database/hadoop.svg"
                     alt=""
                   />
                 </div>
@@ -816,7 +562,7 @@
                   <img
                     width="252"
                     height="168"
-                    src="../../assets/img/services/database/jasper-logo-dark.svg"
+                    src="assets/img/services/database/jasper-logo-dark.svg"
                     alt=""
                   />
                 </div>
@@ -826,7 +572,7 @@
                   <img
                     width="252"
                     height="168"
-                    src="../../assets/img/services/database/MongoDB_Logo_svg.webp"
+                    src="assets/img/services/database/MongoDB_Logo_svg.webp"
                     alt=""
                   />
                 </div>
@@ -836,7 +582,7 @@
                   <img
                     width="252"
                     height="168"
-                    src="../../assets/img/services/database/mysql-logo-ar.svg"
+                    src="assets/img/services/database/mysql-logo-ar.svg"
                     alt=""
                   />
                 </div>
@@ -846,7 +592,7 @@
                   <img
                     width="252"
                     height="168"
-                    src="../../assets/img/services/database/oracle-logo-ar.svg"
+                    src="assets/img/services/database/oracle-logo-ar.svg"
                     alt=""
                   />
                 </div>
@@ -856,7 +602,7 @@
                   <img
                     width="252"
                     height="168"
-                    src="../../assets/img/services/database/pentaho.svg"
+                    src="assets/img/services/database/pentaho.svg"
                     alt=""
                   />
                 </div>
@@ -866,7 +612,7 @@
                   <img
                     width="252"
                     height="168"
-                    src="../../assets/img/services/database/postgresql-logo-ar.svg"
+                    src="assets/img/services/database/postgresql-logo-ar.svg"
                     alt=""
                   />
                 </div>
@@ -893,7 +639,7 @@
                   <img
                     width="41"
                     height="35"
-                    src="../../assets/img/services/New folder/Books.svg"
+                    src="assets/img/services/New folder/Books.svg"
                     alt=""
                   />
                 </span>
@@ -906,7 +652,7 @@
                   <img
                     width="41"
                     height="35"
-                    src="../../assets/img/services/New folder/heart-rate-icon.svg"
+                    src="assets/img/services/New folder/heart-rate-icon.svg"
                     alt=""
                   />
                 </span>
@@ -919,7 +665,7 @@
                   <img
                     width="41"
                     height="35"
-                    src="../../assets/img/services/New folder/dollor-icon.svg"
+                    src="assets/img/services/New folder/dollor-icon.svg"
                     alt=""
                   />
                 </span>
@@ -932,7 +678,7 @@
                   <img
                     width="41"
                     height="35"
-                    src="../../assets/img/services/New folder/Transport-icon.svg"
+                    src="assets/img/services/New folder/Transport-icon.svg"
                     alt=""
                   />
                 </span>
@@ -945,7 +691,7 @@
                   <img
                     width="41"
                     height="35"
-                    src="../../assets/img/services/New folder/icon-label-4.svg"
+                    src="assets/img/services/New folder/icon-label-4.svg"
                     alt=""
                   />
                 </span>
@@ -958,7 +704,7 @@
                   <img
                     width="41"
                     height="35"
-                    src="../../assets/img/services/New folder/telecom-icon.svg"
+                    src="assets/img/services/New folder/telecom-icon.svg"
                     alt=""
                   />
                 </span>
