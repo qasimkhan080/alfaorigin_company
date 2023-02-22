@@ -30,9 +30,9 @@
     font-size: 58px;
     font-weight: 700;
 }
-.section-title{
-    padding: 0% 5% 2% 5%;
-}
+// .section-title{
+//     padding: 0% 5% 2% 5%;
+// }
 .section-title p{
     font-size: 20px;
 }
@@ -108,20 +108,63 @@
     width: 100%;
     display: flex;
     justify-content: start;
+    padding: 3% 5% 3% 5%;
+    background-color: #FFF6F6;
 }
 .service_bar_r{
     width: 100%;
     display: flex;
     justify-content: end;
+    padding: 3% 4% 3% 0%;
+}
+.service_bar_s_ux{
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    padding: 3% 5% 3% 5%;
+    background-color: #FFF9E5;
+}
+.service_bar_s_test{
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    padding: 3% 5% 3% 5%;
+    background-color: #EDE7FF;
+}
+.service_bar_s_brand{
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    padding: 3% 5% 3% 5%;
+    background-color: #F7FFEF;
 }
 .service_left{
     width: 100%;
     height: auto;
     align-items: center;
 }
-.services_bar{
-    margin-bottom: 5%;
+.service_heading{
+    font-size: 57px;
+    font-weight: bold;
 }
+.service_heading::before, .service_heading::after {
+    content: '';
+    width: 50px;
+    height: 2px;
+    background: #3498db;
+    display: inline-block;
+  }
+  
+  .service_heading::before {
+    margin: 0 20px 17px 0;
+  }
+  
+  .service_heading::after {
+    margin: 0 0 17px 19px;
+  }
+// .services_bar{
+//     margin-bottom: 5%;
+// }
 
 .content_div h4{
     font-size: 57px;
@@ -133,16 +176,16 @@
     font-weight: bold;
 }
 .mob{
-    padding-right: 10%;
+    padding-right: 12%;
 }
 .degi{
-    padding-right: 25%;
+    padding-right: 29%;
 }
 .sup{
-    padding-right: 33%;
+    padding-right: 36%;
 }
 .cons{
-    padding-right: 35%;
+    padding-right: 39%;
 }
 .content_div p{
     color: #2A2A2A;
@@ -275,6 +318,7 @@ padding-left: 1%;
     @media only screen and (max-width: 992px){
         .content_div_r{
             margin-top: 5%;
+            padding-left: 10%;
         }
         .service_bar_r{
         
@@ -282,6 +326,9 @@ padding-left: 1%;
         }
         }
 @media only screen and (max-width: 500px){
+    .service_heading {
+        font-size: 30px;
+    }
     .bar_itmes{
         padding: 8px;
       
