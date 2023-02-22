@@ -44,6 +44,30 @@
 .animated {
   animation: up-down 2s ease-in-out infinite alternate-reverse both;
 }
+.cards_header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.card-wrap {
+  background: white;
+  height: 9rem;
+  width: 9rem;
+  margin: 1.2rem 1.4rem;
+  padding: 15px;
+  border-radius: 2rem;
+  box-shadow: 3px 3px 4px rgb(180 167 192 / 27%), -4px -2px 4px white !important;
+  position: relative;
+  transition: 0.3s ease all;
+}
+.card-wrap:nth-child(odd) {
+  transform: translateY(-20px);
+}
+.card-wrap p {
+  font-size: 13.2px;
+  line-height: 1.4;
+  text-align: center;
+}
 
 //responsive
 @media only screen and (max-width: 500px) {
