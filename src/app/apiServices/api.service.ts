@@ -6,6 +6,7 @@ import { HttpClient } from '@angular/common/http';
 })
 export class ApiService {
 private baseUrl = 'https://api.alfaorigin.com/';
+// private baseUrl = 'http://localhost:3000/';
 
   constructor(private http: HttpClient) { }
 
